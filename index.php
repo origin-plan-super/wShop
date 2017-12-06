@@ -10,7 +10,6 @@
 // +----------------------------------------------------------------------
 
 // 应用入口文件
-
 // 检测PHP环境
 if (version_compare(PHP_VERSION, '5.3.0', '<'))
     die('require PHP > 5.3.0 !');
@@ -26,10 +25,14 @@ define('PAPER_DATA_PATH', './data/');
 define('__KEY__', 'wshop12138..');
 //定义工作路径
 define('WORKING_PATH', str_replace('\\', '/', __DIR__));
+//定义根上传路径
+define('UPLOAD_ROOT_PATH', '/Public/Upload/');
 //定义上传的跟目录——用户
-define('UPLOAD_ROOT_PATH_USER', '/Public/Upload/user/');
+define('__UPLOAD__USER__', '/Public/Upload/user/');
 //定义上传的跟目录——管理
-define('UPLOAD_ROOT_PATH_ADMIN', '/Public/Upload/admin/');
+define('__UPLOAD__ADMIN__', '/Public/Upload/admin/');
+//定义上传的根目录——商品图片
+define('__UPLOAD__GOODS__', '/Public/Upload/goods/');
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';

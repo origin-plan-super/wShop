@@ -1,262 +1,79 @@
 <?php
+/**
+* +----------------------------------------------------------------------
+* 创建日期：2017年11月27日
+* 最新修改时间：2017年11月27日
+* +----------------------------------------------------------------------
+* https：//github.com/ALNY-AC
+* +----------------------------------------------------------------------
+* 微信：AJS0314
+* +----------------------------------------------------------------------
+* QQ:1173197065
+* +----------------------------------------------------------------------
+* #####首页控制器#####
+* @author 代码狮
+*/
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends Controller {
+class IndexController extends Controller{
     
-    
-    public function saveField(){
+    //构造函数
+    public function _initialize(){
         
-        if(IS_POST){
-            
-            $info = I('post.');
-            $id = $info['id'];
-            
-            if(!empty($id)){
-                
-                $tableName =   strtolower($info['tableName']);
-                $save = $info['save'];
-                
-                
-                
-                $model = M($tableName);
-                $where[$tableName.'_id'] = $id;
-                
-                $result =   $model->where($where)->save($save);
-                
-                
-                if($result!== false){
-                    $res['res'] = 1;
-                    $res['msg'] = $result;
-                }else{
-                    $res['res'] = -1;
-                    $res['msg'] = $result.'【'.$id.'】【'.json_encode($save).'】【'.$tableName.'】';
+    }
+    //主
+    public function index(){
+        
+        
+        //找导航
+        $model=M('nav');
+        $where=[];
+        $nav=$model->where($where)->order('sort asc')->select();
+        //遍历找推荐
+        $model_up=M('up');
+        $model_goods=M('goods');
+        $model_carousel=M('carousel');
+        
+        foreach ($nav as $key => $value) {
+            //找到推荐商品
+            $where=[];
+            $where['nav_id']=$value['nav_id'];
+            $up=$model_up->where($where)->select();
+            if($up){
+                //有推荐数据
+                foreach ($up as $key2 => $value2) {
+                    $where=[];
+                    $where['goods_id']=$value2['goods_id'];
+                    $up_goods=$model_goods->where($where)->find();
+                    //得判断一下商品有没有上架
+                    if($up_goods['is_show']>0){
+                        $nav[$key]['goods'][]=$up_goods;
+                    }
                 }
-            }else{
-                $res['res'] = -2;
-                $res['msg'] = $tableName.'_id is null id:'.$id;
+            }
+            //找到推荐商品end
+            //开始找轮播图
+            $where=[];
+            $where['nav_id']=$value['nav_id'];
+            $result_carousel=$model_carousel->where($where)->order('sort asc')->select();
+            if($result_carousel){
+                $nav[$key]['carousel']=$result_carousel;
             }
             
-        }else{
-            $res['res'] = -2;
-            $res['msg'] = 'is no post';
         }
         
-        echo json_encode($res);
+        $this->assign('nav',$nav);
+        // dump($nav);
+        // die;
         
-        
+        //显示
+        $this->display();
         
     }
-    /*
-    查一条
-    */
-    public function getOne(){
-        
-        
-        $info = I('get.');
-        $tableName =   strtolower($info['tableName']);
-        $id = $info['id'];
-        
-        
-        if(!empty($id)){
-            $model = M($tableName);
-            $where[$tableName.'_id'] = $id;
-            
-            $result =   $model->field($info['field'])->where($where)->find();
-            
-            
-            
-            if($result!== false){
-                $res['res'] = 1;
-                if(empty($info['field'])){
-                    $res['msg'] = $result;
-                }else{
-                    $res['msg'] = $result;
-                }
-            }else{
-                $res['res'] = -1;
-                $res['msg'] = 'no';
-            }
-        }else{
-            $res['res'] = -2;
-            $res['msg'] = 'id is null id:'.$id;
-        }
-        
-        
-        
-        echo json_encode($res);
-        
-        
-    }
-    /**
-    * 通用查表，查所有
-    */
-    public function getList(){
-        
-        
-        if(!empty(I('get.'))){
-            //有get
-            $get = I('get.');
-            $tableName =   strtolower($get['tableName']);
-            $model = M($tableName);
-            
-            $result  =  $model->select();
-            if($result!== false){
-                //查询没有出错
-                $res['res'] = count($result);
-                $res['msg'] = $result;
-                
-            }else{
-                //查询失败
-                $res['res'] = $result;
-                $res['msg'] = $result;
-            }
-            
-            
-        }else{
-            //没有任何get
-            $res['res'] = -1;
-            $res['msg'] = 'no data';
-        }
-        
-        echo json_encode($res);
+    //空操作
+    public function _empty(){
         
     }
     
-    public function add(){
-        
-        if(!empty(I('post.'))){
-            //有get
-            $post = I('post.');
-            $tableName =   strtolower($post['tableName']);
-            
-            $add = $post['add'];
-            
-            $add['add_time']=time();
-            $add['edit_time']=time();
-            
-            $add[$tableName.'_id']=md5($tableName.$add['add_time'].__KEY__.rand());
-            
-            
-            $model = M($tableName);
-            
-            $result  =  $model->add($add);
-            
-            if($result!== false){
-                //添加没有出错
-                $res['res'] = $result;
-                $res['msg'] = $add[$tableName.'_id'];
-                
-            }else{
-                //添加失败
-                $res['res'] = $result;
-                $res['msg'] = $result;
-            }
-        }else{
-            //没有任何post
-            $res['res'] = -1;
-            $res['msg'] = 'no data';
-        }
-        
-        echo json_encode($res);
-        
-    }
-    
-    public function del(){
-        
-        if(!empty(I('post.'))){
-            $post = I('post.');
-            $tableName = strtolower($post['tableName']);
-            
-            $where[$tableName.'_id']= $post['id'];
-            
-            $model = M($tableName);
-            
-            $result=$model->where($where)->delete();
-            
-            if($result){
-                //没有出错
-                $res['res'] = $result;
-                $res['msg'] = $result;
-                
-            }else{
-                //失败
-                $res['res'] = $result;
-                $res['msg'] = $result;
-            }
-            
-            
-        }else{
-            //没有post
-            $res['res'] = -1;
-            $res['msg'] = 'no data';
-        }
-        echo json_encode($res);
-        
-        
-    }
-    /*
-    删除选中
-    */
-    public function delAll(){
-        
-        
-        if(!empty(I('post.'))){
-            $post = I('post.');
-            $tableName = strtolower($post['tableName']);
-            
-            
-            $id= $post['id'];//这个id必须是数组
-            
-            $id= implode("','",$id);//用逗号分隔
-            
-            $where = $tableName."_id in('".$id."')";
-            
-            
-            $model = M($tableName);
-            
-            $result=$model->where($where)->delete();
-            $res['sql'] = $model->_sql();
-            
-            if($result){
-                //没有出错
-                $res['res'] = $result;
-                $res['msg'] = $result;
-                
-            }else{
-                //失败
-                $res['res'] = $result;
-                $res['msg'] = $result;
-            }
-            
-            
-        }else{
-            //没有post
-            $res['res'] = -1;
-            $res['msg'] = 'no data';
-        }
-        echo json_encode($res);
-        
-        
-    }
-    
-    
-    
-    public function test(){
-        
-        
-        
-        
-        
-    }
     
 }
-
-
-
-?>
-  <?php
-
-
-
-
-?>
