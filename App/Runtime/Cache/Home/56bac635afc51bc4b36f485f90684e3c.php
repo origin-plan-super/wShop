@@ -123,8 +123,8 @@
 			<i class="fa fa-remove close"></i>
 		</div>
 		<div class="box-body">
-			<!-- <img src="/wShop/wx.jpg" alt=""> -->
-			<img src="/wShop/wx2.png" alt="">
+			<img src="/wShop/wx.jpg" alt="">
+			<!-- <img src="/wShop/wx2.png" alt=""> -->
 			<p>长按识别二维码，添加客服微信号即可下单</p>
 		</div>
 	</div>
