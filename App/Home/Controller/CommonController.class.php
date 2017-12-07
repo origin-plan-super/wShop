@@ -26,16 +26,42 @@ class CommonController extends Controller {
             
             $head='http://120.78.162.200:12138';
             $url=$head.U('Index/Index');
-            
-            
-            
             $info= baseAuth($url);
             $openid= $info['openid'];
             $access_token= $info['access_token'];
-            session('openid',$openid);
-            session('access_token',$access_token);
-            
             F('user',$info);
+            
+            
+            if(!empty($openid)){
+                
+                
+                session('openid',$openid);
+                session('access_token',$access_token);
+                
+                //=========添加数据=========
+                $model=M('user');
+                //=========添加数据区
+                $add=[];
+                $add['openid']=$openid;
+                $add['access_token']=$access_token;
+                $add['add_time']=time();
+                $add['edit_time']=time();
+                //=========sql区
+                $result=$model->add($add,null,true);
+                
+                session('openid',$openid);
+                session('access_token',$access_token);
+                
+            }else{
+                
+                session('openid',null);
+                session('access_token',null);
+                
+            }
+            
+            
+            
+            
             
             
             // $url=U('Index/index');
