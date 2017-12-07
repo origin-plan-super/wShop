@@ -18,7 +18,7 @@ namespace Admin\Controller;
 use Think\Controller;
 class OrderController extends CommonController{
     
-   
+    
     //主
     public function index(){
         
@@ -190,6 +190,42 @@ class OrderController extends CommonController{
         echo "<script>top.location.href='$url'</script>";
         
         
+    }
+    
+    
+    public function saveOn(){
+        $order_id=I('post.order_id');
+        $order_gs=I('post.order_gs');
+        $order_on=I('post.order_on');
+        
+        //=========保存数据=========
+        $model=M('order');
+        //=========条件区
+        $where=[];
+        $where['order_id']=$order_id;
+        //=========保存数据区
+        $save=[];
+        $save['state']=2;
+        $save['order_gs']=$order_gs;
+        $save['order_on']=$order_on;
+        $save['edit_time']=time();
+        //=========sql区
+        $result=$model->where($where)->save($save);
+        
+        //=========判断=========
+        if($result){
+            $res['res']=$result;
+            $res['msg']=$result;
+        }else{
+            $res['res']=-1;
+            $res['msg']=$result;
+            $res['sql']=$model->_sql()  ;
+        }
+        //=========判断end=========
+        
+        //=========输出json=========
+        echo json_encode($res);
+        //=========输出json=========
     }
     
     public function showList(){

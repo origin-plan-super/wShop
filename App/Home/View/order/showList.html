@@ -232,6 +232,11 @@
 									</if>
 									<if condition='$index === 4 '>
 										<a href='__MODULE__/Order/ok/order_id/{$vo.order_info.order_id}/pages/{$index}' class="tool-btn">确认收货</a>
+
+										<br> 【快递单号】{$vo.order_info.order_on}
+										<br>【快递公司】{$vo.order_info.order_gs}
+
+
 									</if>
 									<if condition='$index === 5 '>
 										<a href='__MODULE__/Order/sc/order_id/{$vo.order_info.order_id}/pages/{$index}' class="tool-btn">售后</a>
@@ -265,8 +270,6 @@
 
 					</div>
 				</if>
-
-
 
 			</volist>
 

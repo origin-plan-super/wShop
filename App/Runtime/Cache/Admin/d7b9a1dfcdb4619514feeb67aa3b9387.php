@@ -419,13 +419,14 @@
                 {{# } }}
 
                 {{# if(d.state == 1){  }}
-                <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="up">
+                <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="fh">
                 去发货
                 </a>
+                <!-- order_on -->
                 {{# } }}
 
                 {{# if(d.state == 2){  }}
-                <a class="layui-btn layui-btn-xs" lay-event="up">
+                <a class="layui-btn layui-btn-xs" lay-event="fhok">
                 已发货
                 </a>
                 {{# } }}
@@ -513,6 +514,122 @@
                     });
                 }
 
+                if (layEvent === 'fh') { //去发货
+                    var on;
+                    var gs;
+                    //例子2
+                    layer.prompt({
+                        formType: 0,
+                        title: '请输入快递单号',
+                    }, function (value, _on, elem) {
+                        on = value;
+                        layer.close(_on);
+
+                        layer.prompt({
+                            formType: 0,
+                            title: '请输入快递公司',
+                        }, function (value, _gs, elem) {
+                            gs = value;
+                            layer.close(_gs);
+
+                            (function () {
+
+                                var url = '/wShop/index.php/Admin/Order/saveOn';
+                                var obj = {
+                                    order_id: data.order_id,
+                                    order_gs: gs,
+                                    order_on: on
+                                };
+                                var fun = function (res) {
+                                    w(res);
+                                    try {
+                                        res = JSON.parse(res);
+                                    } catch (error) {
+                                        //转换错误
+                                        return
+                                    }
+                                    if (res.res > 0) {
+                                        layer.msg('操作成功！');
+                                        tableIns.reload();
+
+                                    } else {
+                                        layer.msg('失败！');
+                                    }
+
+                                };
+                                $.post(url, obj, fun);
+
+                            }());
+
+                        });
+                    });
+
+
+                }
+
+                if (layEvent === 'fhok') {
+
+                    layer.confirm('【单号】' + data.order_on + '<br/>【公司】' + data.order_gs, {
+                        title: '物流信息',
+                        btn: ['确定', '修改']
+                    }, function (index, layero) {
+                        //按钮【按钮一】的回调
+
+                        layer.close(index);
+                    }, function () {
+                        //按钮【按钮二】的回调
+                        w('xxx')
+                        layer.prompt({
+                            formType: 0,
+                            title: '请输入快递单号',
+                        }, function (value, _on, elem) {
+                            on = value;
+                            layer.close(_on);
+
+                            layer.prompt({
+                                formType: 0,
+                                title: '请输入快递公司',
+                            }, function (value, _gs, elem) {
+                                gs = value;
+                                layer.close(_gs);
+
+                                (function () {
+
+                                    var url = '/wShop/index.php/Admin/Order/saveOn';
+                                    var obj = {
+                                        order_id: data.order_id,
+                                        order_gs: gs,
+                                        order_on: on
+                                    };
+                                    var fun = function (res) {
+                                        w(res);
+                                        try {
+                                            res = JSON.parse(res);
+                                        } catch (error) {
+                                            //转换错误
+                                            return
+                                        }
+                                        if (res.res > 0) {
+                                            layer.msg('操作成功！');
+                                            tableIns.reload();
+
+                                        } else {
+                                            layer.msg('失败！');
+                                        }
+
+                                    };
+                                    $.post(url, obj, fun);
+
+                                }());
+
+                            });
+                        });
+
+
+                    });
+
+
+                }
 
                 if (layEvent === 'open') { //编辑
 

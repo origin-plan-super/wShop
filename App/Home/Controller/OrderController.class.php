@@ -115,21 +115,24 @@ class OrderController extends CommonController{
             
             $arr['all'][$value['order_id']]['goods_list'][]=$value;
             $arr['all'][$value['order_id']]['order_info']['t1_add_time']=date('Y-m-d H:i:s',$value['t1_add_time']) ;
-            $arr['all'][$value['order_id']]['order_info']['order_id']=$value['order_id'] ;
-            $arr['all'][$value['order_id']]['order_info']['order_money']=$value['order_money'] ;
-            $arr['all'][$value['order_id']]['order_info']['sc_info']=$value['sc_info'] ;
-            $arr['all'][$value['order_id']]['order_info']['sc_type']=$value['sc_type'] ;
-            $arr['all'][$value['order_id']]['order_info']['state']=$value['state'] ;
+            // $arr['all'][$value['order_id']]['order_info']['order_id']=$value['order_id'] ;
+            // $arr['all'][$value['order_id']]['order_info']['order_money']=$value['order_money'] ;
+            // $arr['all'][$value['order_id']]['order_info']['sc_info']=$value['sc_info'] ;
+            // $arr['all'][$value['order_id']]['order_info']['sc_type']=$value['sc_type'] ;
+            // $arr['all'][$value['order_id']]['order_info']['state']=$value['state'] ;
+            $arr['all'][$value['order_id']]['order_info']=$value ;
+            
             
             // ====
             
             $arr[$value['state']][$value['order_id']]['goods_list'][]=$value;
             $arr[$value['state']][$value['order_id']]['order_info']['t1_add_time']=date('Y-m-d H:i:s',$value['t1_add_time']) ;
-            $arr[$value['state']][$value['order_id']]['order_info']['order_id']=$value['order_id'] ;
-            $arr[$value['state']][$value['order_id']]['order_info']['order_money']=$value['order_money'] ;
-            $arr[$value['state']][$value['order_id']]['order_info']['sc_info']=$value['sc_info'] ;
-            $arr[$value['state']][$value['order_id']]['order_info']['sc_type']=$value['sc_type'] ;
-            $arr[$value['state']][$value['order_id']]['order_info']['state']=$value['state'] ;
+            // $arr[$value['state']][$value['order_id']]['order_info']['order_id']=$value['order_id'] ;
+            // $arr[$value['state']][$value['order_id']]['order_info']['order_money']=$value['order_money'] ;
+            // $arr[$value['state']][$value['order_id']]['order_info']['sc_info']=$value['sc_info'] ;
+            // $arr[$value['state']][$value['order_id']]['order_info']['sc_type']=$value['sc_type'] ;
+            // $arr[$value['state']][$value['order_id']]['order_info']['state']=$value['state'] ;
+            $arr[$value['state']][$value['order_id']]['order_info']=$value;
         }
         
         // dump($arr);
