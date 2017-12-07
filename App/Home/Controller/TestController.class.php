@@ -20,7 +20,6 @@ class TestController extends CommonController{
         
         dump(I('get.'));
         
-        
     }
     
 }
