@@ -27,7 +27,7 @@
 
 <body>
 	<!--顶部导航栏开始-->
-	
+
 	<!--顶部导航栏结束-->
 
 	<!--全局的div id为user_page  内容开始-->
@@ -107,6 +107,27 @@
 	<script src="/wShop/Public/Home/dist/a/a.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/wShop/Public/Home/dist/user/js/user.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
-			//			isNav(".am-header");
+		//			isNav(".am-header");
+
+		w('<?php echo ($user_info); ?>');
+
+		// getUserInfo('<?php echo ($openid); ?>', '<?php echo ($access_token); ?>');
+
+		function getUserInfo(openid, access_token) {
+
+			$.get('https://api.weixin.qq.com/sns/userinfo?access_token=' + access_token + '&openid=' + openid + '&lang=zh_CN ', function (res) {
+
+				try {
+					res = JSON.parse(res);
+				} catch (error) {
+					//转换错误
+				}
+
+				console.warn(res.headimgurl);
+
+			});
+
+		}
+
 	</script>
 </body>

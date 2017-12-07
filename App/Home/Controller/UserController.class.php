@@ -24,9 +24,14 @@ class UserController extends Controller{
     //主
     public function user(){
         
+        $openid=   session('openid');
+        $access_token= session('access_token');
         
-        $this->assign('access_token',$access_token);
-        $this->assign('openid',$openid);
+        $user_info =   _request('https://api.weixin.qq.com/sns/userinfo?access_token='.$access_token .'&openid='. $openid.'&lang=zh_CN ');
+        
+        
+        $this->assign('user_info',$user_info);
+        
         $this->display();
         
     }
