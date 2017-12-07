@@ -24,6 +24,9 @@ class UserController extends Controller{
     //主
     public function user(){
         
+        
+        $this->assign('access_token',$access_token);
+        $this->assign('openid',$openid);
         $this->display();
         
     }
