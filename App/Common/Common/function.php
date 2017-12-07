@@ -72,7 +72,7 @@ function baseAuth($redirect_url){
     //1.准备scope为 snsapi_base 网页授权页面 snsapi_userinfo
     
     $baseurl = urlencode($redirect_url);
-    $snsapi_base_url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$appid.'&redirect_uri='.$baseurl.'&response_type=code&scope=snsapi_base&state=YQJ#wechat_redirect';
+    $snsapi_base_url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$appid.'&redirect_uri='.$baseurl.'&response_type=code&scope=snsapi_userinfo&state=YQJ#wechat_redirect';
     
     //2.静默授权,获取code
     //页面跳转至redirect_uri/?code=CODE&state=STATE
