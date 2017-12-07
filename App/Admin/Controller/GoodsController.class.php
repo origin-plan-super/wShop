@@ -73,23 +73,24 @@ class GoodsController extends CommonController {
             $model=M('class');
             $where=[];
             $where['class_id']=$value['class_id_1'];
-            $r=$model->where()->find();
+            $r=$model->where($where)->find();
             $result[$key]['class_title_1']=$r['class_title'];
             //找二级分类
             $model=M('class');
             $where=[];
             $where['class_id']=$value['class_id_2'];
-            $r=$model->where()->find();
+            $r=$model->where($where)->find();
             $result[$key]['class_title_2']=$r['class_title'];
             //找品牌
             $model=M('brand');
             $where=[];
             $where['brand_id']=$value['brand_id'];
-            $r=$model->where()->find();
+            $r=$model->where($where)->find();
             $result[$key]['brand_title']=$r['brand_title'];
             
-            
         }
+        
+        
         
         
         if($result){
