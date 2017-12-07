@@ -16,25 +16,26 @@
     <script>
 
 
-        // $.ajax({
-        //     url: '{$url}',
-        //     type: "GET",
-        //     dataType: 'JSONP',
-        //     success: function (result) {
-        //         // $('#test').html(result);
-        //         w(result);
-        //     },
-        //     error: function (xhr, status, error) {
+        $.ajax({
+            url: '{$url}',
+            type: "GET",
+            dataType: 'JSONP',
+            success: function (result) {
+                // $('#test').html(result);
+                w(result);
+            },
+            error: function (xhr, status, error) {
 
-        //         w(xhr);
-        //         w(status);
-        //         w(error);
+                w(xhr);
+                w(status);
+                w(error);
 
-        //     }
-        // });
+            }
+        });
 
 
-        getOpenid('{$url}');
+
+        // getOpenid('{$url}');
         function getOpenid(url) {
 
             var fun = function (res) {
