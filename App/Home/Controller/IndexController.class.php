@@ -67,6 +67,11 @@ class IndexController extends CommonController{
         $this->display();
         
     }
+    
+    public function about(){
+        $this->display();
+        
+    }
     //空操作
     public function _empty(){
         

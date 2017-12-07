@@ -51,7 +51,7 @@
 					<span class="iconfont icon-mjiantou-copy1 fr"></span>
 				</li>
 			</a>
-			<a href="#">
+			<a href="/wShop/index.php/Home/Index/About">
 				<li>
 					<span class="">关于我们</span>
 					<span class="fr">
@@ -71,9 +71,10 @@
 
 	<!--底部导航栏开始-->
 
-	<a href="/wShop/index.php/Home/query/query" class="query">
-    <i class="iconfont icon-fangdajing"></i>
-</a>
+	<?php if([ss] != 3): ?><a href="/wShop/index.php/Home/query/query" class="query">
+        <i class="iconfont icon-fangdajing"></i>
+    </a><?php endif; ?>
+
 
 <!--底部导航栏开始-->
 <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default" id="" style="">
@@ -112,7 +113,7 @@
 
 		var user_info = JSON.parse('<?php echo ($user_info); ?>');
 
-		w(user_info);
+		// w(user_info);
 		// headimgurl
 		$('#user_name').text(user_info.nickname);
 		$('#user_head').attr('src', user_info.headimgurl);
