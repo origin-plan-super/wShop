@@ -65,8 +65,8 @@ function baseAuth($redirect_url){
     $appid='wx9b7ab18e61268efb';
     $appsecret='bcd46807674b9448617438256db6cada';
     //===
-    $appid='wxc5919bd34da8b695';
-    $appsecret='87e678bca54b92f8c7213e1ba9f12963';
+    // $appid='wxc5919bd34da8b695';
+    // $appsecret='87e678bca54b92f8c7213e1ba9f12963';
     
     
     //1.准备scope为 snsapi_base 网页授权页面 snsapi_userinfo
