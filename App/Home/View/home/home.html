@@ -191,7 +191,7 @@
 			$(".swiper-container").on('touchstart', function(e) {
 				//				e.preventDefault()
 			})
-			$("#topNav .swiper-slide").on('click', function(e) {
+			$("#topNav .swiper-slide").on('click touchstart', function(e) {
 				//				e.preventDefault();
 				var id = $(this).attr("data-index");
 				galleryTop.slideTo(id - 1, 0);
