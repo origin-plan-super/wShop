@@ -62,6 +62,7 @@ function _request($curl,$https=true,$method='GET',$data=null){
 * @return [type]         [description]
 */
 function baseAuth($redirect_url){
+    
     $appid='wx9b7ab18e61268efb';
     $appsecret='bcd46807674b9448617438256db6cada';
     //===
