@@ -493,7 +493,6 @@
 
                     <td v-for='(td,i) in item' class="">
 
-
                         <div class="arr-item-box" v-if='i==5'>
                             <span class="badge badge-danger" :data-mtpis='"<img class=\"hover-img\" src=\"/wShop/Public/upload/goods/"+td+"\"/>"'>{{td}}</span>
                         </div>

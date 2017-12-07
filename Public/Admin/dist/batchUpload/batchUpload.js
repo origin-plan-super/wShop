@@ -48,7 +48,7 @@ function read(content) {
             };
             setTimeout(function () {
                 $.get(url, fun);
-            }, 1000);
+            }, 0);
 
         }());
     } else {
@@ -206,6 +206,45 @@ function test(content) {
         var brand_title = element[2];
         var class_title_1 = element[3];
         var class_title_2 = element[4];
+
+        if (list[brand_title] == null) {
+            $('#upCSV_title').text('品牌：【' + brand_title + '】不存在！');
+            clearInterval(Interval);
+            // $('.thead').css('position', 'fixed');
+            $('#loadBox').hide();
+            layer.close(loadC);
+            layer.msg('品牌：【' + brand_title + '】不存在！', {
+                anim: 6
+            });
+            $('#ok').show();
+            return;
+        }
+        if (list[brand_title].class_1[class_title_1] == null) {
+            $('#upCSV_title').text('一级分类：【' + class_title_1 + '】不存在！');
+            clearInterval(Interval);
+            // $('.thead').css('position', 'fixed');
+            $('#loadBox').hide();
+            layer.close(loadC);
+            layer.msg('一级分类：【' + class_title_1 + '】不存在！', {
+                anim: 6
+            });
+            $('#ok').show();
+            return;
+        }
+        if (list[brand_title].class_1[class_title_1].class_2[class_title_2] == null) {
+
+            $('#upCSV_title').text('二级分类：【' + class_title_2 + '】不存在！');
+            clearInterval(Interval);
+            // $('.thead').css('position', 'fixed');
+            $('#loadBox').hide();
+            layer.close(loadC);
+            layer.msg('二级分类：【' + class_title_2 + '】不存在！', {
+                anim: 6
+            });
+            $('#ok').show();
+            return;
+
+        }
 
         var item = {
             goods_title: element[0],
