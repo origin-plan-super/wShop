@@ -18,9 +18,12 @@ use Think\Controller;
 class TestController extends Controller{
     
     public function test(){
+        
         dump(F('user'));
-        $url=U('Index/Index/');
+        $head='http://120.78.162.200:12138';
+        $url=$head.U('Index/Index');
         dump($url);
+        
     }
     
     public function aaa(){

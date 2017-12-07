@@ -20,14 +20,12 @@ class CommonController extends Controller {
     //ThinkPHP提供的构造方法
     public function _initialize() {
         
-        
-        
-        session('openid',null);
+        // session('openid',null);
         if (empty(session('openid'))) {
             
             
-            
-            $url=U('Index/index');
+            $head='http://120.78.162.200:12138';
+            $url=$head.U('Index/Index');
             
             
             
@@ -51,5 +49,9 @@ class CommonController extends Controller {
         }
         
     }
+    
+    
+    
+    
     
 }
