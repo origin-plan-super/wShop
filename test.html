@@ -62,15 +62,12 @@
     <script>
 
         (function () {
-            // var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx9b7ab18e61268efb&redirect_uri=http%3A%2F%2Fqq.com%2Ftest%2Ftest.html&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
-            // var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx9b7ab18e61268efb&redirect_uri=http%3A%2F%2Fqq.com%2Ftest%2Ftest.html&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
-            // var url = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxc5919bd34da8b695&secret=87e678bca54b92f8c7213e1ba9f12963';
+
+            var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx9b7ab18e61268efb&redirect_uri=http%3A%2F%2F120.78.162.200%3A12138%2FwShop%2Ftest.php&response_type=code&scope=snsapi_base&state=123#wechat_redirect'
             var obj = {};
             var fun = function (res) {
-
-                $('#test').html(JSON.stringify(res));
+                $('#test').html(res);
                 w(res);
-
                 // getUserInfo(res.access_token);
 
             };
@@ -110,6 +107,9 @@
 
 
     </script>
+
+
+    <script>window.location.href = 'http://127.0.0.1:12138/wShop/test.php?code=$code&nsukey=$nsukey'</script>
 
 </body>
 
