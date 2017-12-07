@@ -1,5 +1,4 @@
 <?php
-
 namespace Home\Controller;
 use Think\Controller;
 class LoginController extends Controller{
@@ -8,6 +7,18 @@ class LoginController extends Controller{
     public function _initialize(){
         
     }
+    
+    public function getopenid(){
+        
+        $info= baseAuth('http://120.78.162.200:12138/wShop/index.php/Home/login/getopenid');
+        $openid= $info['openid'];
+        $access_token= $info['access_token'];
+        session('openid',$openid);
+        session('access_token',$access_token);
+        
+    }
+    
+    
     public function login(){
         
         $openid= I('post.openid');
@@ -42,14 +53,16 @@ class LoginController extends Controller{
     
     public function setOpenid(){
         
-        $code=I('get.code');
-        $nsukey=I('get.nsukey');
-        $ip='120.78.162.200:12138';
-        // $ip='127.0.0.1:12138';
-        echo "<h1><a href='http://$ip/wShop/login.html'>回去</a></h1>";
-        $url= "https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx9b7ab18e61268efb&secret=bcd46807674b9448617438256db6cada&code=$code&grant_type=authorization_code";
-        $this->assign('url',$url);
+        
+        
+        
+        $this->assign('openid',$openid);
+        $this->assign('openid',$openid);
+        
+        
         $this->display();
+        
+        
         
     }
     

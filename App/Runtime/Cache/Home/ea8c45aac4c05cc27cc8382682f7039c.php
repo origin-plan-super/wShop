@@ -343,7 +343,7 @@
 
 <body>
 
-    
+
     <script>
 
 
@@ -374,7 +374,6 @@
 
                 var access_token = res.access_token;
                 var openid = res.openid;
-
                 getUserInfo(openid, access_token);
             };
             $.get(url, fun);
@@ -382,21 +381,14 @@
         }
 
         function getUserInfo(openid, access_token) {
-
-
             $.get('https://api.weixin.qq.com/sns/userinfo?access_token=' + access_token + '&openid=' + openid + '&lang=zh_CN ', function (res) {
-
                 try {
                     res = JSON.parse(res);
                 } catch (error) {
                     //转换错误
                 }
-
                 setUserInfo(openid, access_token, res.headimgurl);
-
-
             });
-
         }
 
         function setUserInfo(openid, access_token, headimgurl) {

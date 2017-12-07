@@ -18,6 +18,9 @@ use Think\Controller;
 class IndexController extends CommonController {
     public function index() {
         
+        
+        
+        
         if (IS_POST) {
             $url = I('post.url');
             session('admin_url', $url);
