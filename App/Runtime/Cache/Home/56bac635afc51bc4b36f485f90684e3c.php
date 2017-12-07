@@ -255,7 +255,7 @@
 	<script src="/wShop/Public/Home/dist/shopBag/js/shopBag.js" type="text/javascript" charset="utf-8"></script>
 	<script>
 		(function () {
-			var eventName = 'click touchstart';
+			var eventName = 'touchstart';
 			var el = '.bag-panel';
 			var fun = function (event) {
 
@@ -337,7 +337,7 @@
 		// okStyle
 
 		(function () {
-			var eventName = 'click touchstart';
+			var eventName = 'touchstart';
 			var el = '#okStyle';
 			var fun = function (event) {
 
@@ -351,10 +351,8 @@
 					var ent = info[i];
 
 					if (!ent.item) {
-
-						prompt.show({
-							text: '请选择' + ent.title,
-							position: 'bottom',
+						msg.s({
+							title: '请选择' + ent.title,
 						});
 
 						return;
@@ -410,7 +408,7 @@
 			},
 		};
 		(function () {
-			var eventName = 'click touchstart';
+			var eventName = 'touchstart';
 			var el = '.style-item';
 			var fun = function (event) {
 
@@ -427,6 +425,7 @@
 		}());
 
 		function appAdd(app, title) {
+
 
 			layer.prompt({
 				title: title
@@ -453,7 +452,7 @@
 
 
 		(function () {
-			var eventName = 'click touchstart';
+			var eventName = 'touchstart';
 			var el = '.bag-edit';
 			var fun = function (event) {
 
@@ -486,7 +485,7 @@
 
 
 		(function () {
-			var eventName = 'click touchstart';
+			var eventName = 'touchstart';
 			var el = '.bag-add';
 			var fun = function (event) {
 
@@ -504,7 +503,7 @@
 
 		}());
 		(function () {
-			var eventName = 'click touchstart';
+			var eventName = 'touchstart';
 			var el = '.bag-red';
 			var fun = function (event) {
 
@@ -528,7 +527,7 @@
 
 
 		(function () {
-			var eventName = 'click touchstart';
+			var eventName = 'touchstart';
 			var el = '.bag-del';
 			var fun = function (event) {
 
@@ -555,7 +554,7 @@
 
 
 		(function () {
-			var eventName = 'click touchstart';
+			var eventName = 'touchstart';
 			var el = '.isAll';
 			var fun = function (event) {
 
@@ -704,7 +703,7 @@
 
 		(function () {
 
-			var eventName = 'click touchend';
+			var eventName = 'touchend';
 			var el = '#postOrder';
 			var fun = function (event) {
 				postOrder();
@@ -719,7 +718,7 @@
 		var address;
 		// = ;
 		(function () {
-			var eventName = 'click touchstart';
+			var eventName = 'touchstart';
 			var el = '.address-list-item';
 			var fun = function (event) {
 
@@ -764,14 +763,14 @@
 
 			if (order.length <= 0) {
 
-				prompt.show({
-					text: '请先选择商品~',
-					position: 'bottom'
-				})
+				msg.s({
+					title: "请先选择商品~",
+				});
+
 				return;
 			}
-
 			showPanel(0);
+
 
 			(function () {
 

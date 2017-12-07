@@ -136,7 +136,7 @@
 
 		(function () {
 			//加入购物车
-			var eventName = 'click touchstart';
+			var eventName = 'touchstart';
 			var el = '#toShopBag';
 			var fun = function (event) {
 				var $this = $(this);
@@ -149,7 +149,7 @@
 		}());
 
 		(function () {
-			var eventName = 'click touchstart';
+			var eventName = 'touchstart';
 			var el = '.style-item';
 			var fun = function (event) {
 
@@ -175,15 +175,16 @@
 
 				if (!ent.item) {
 
-					prompt.show({
-						text: '请选择' + ent.title,
-						position: 'bottom',
+					msg.s({
+						title: '请选择' + ent.title,
 					});
+
+					w(1);
 					return;
 				}
+
 				_info.push(ent.title + '：' + ent.item);
 			}
-
 
 
 			(function () {
@@ -206,14 +207,10 @@
 
 						msg.s({
 							title: "添加成功",
-							bottom: '80px'
 						});
 
-						// prompt.show({
-						// 	text: '添加成功',
-						// 	position: 'bottom',
-						// });
 					} else {
+
 					}
 
 				};
@@ -224,10 +221,6 @@
 
 		}
 
-		msg.s({
-			title: "添加成功",
-			bottom: '80px'
-		});
 
 	</script>
 </body>
