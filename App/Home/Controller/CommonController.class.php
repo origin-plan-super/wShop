@@ -53,15 +53,9 @@ class CommonController extends Controller {
                 session('access_token',$access_token);
                 
             }else{
-                
                 session('openid',null);
                 session('access_token',null);
-                
             }
-            
-            
-            
-            
             
             
             // $url=U('Index/index');
