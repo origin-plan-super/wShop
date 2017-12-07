@@ -80,7 +80,10 @@
 	<script type="text/javascript">
 		//			isNav(".am-header");
 
-		w('{$user_info}');
+
+		var user_info = JSON.parse('{$user_info}');
+
+		w(user_info);
 
 		// getUserInfo('{$openid}', '{$access_token}');
 
