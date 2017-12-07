@@ -136,7 +136,7 @@
 
 		(function () {
 			//加入购物车
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '#toShopBag';
 			var fun = function (event) {
 				var $this = $(this);
@@ -149,7 +149,7 @@
 		}());
 
 		(function () {
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '.style-item';
 			var fun = function (event) {
 
@@ -159,7 +159,6 @@
 
 				$('[data-group="' + group + '"]').removeClass('active');
 				$this.addClass('active');
-				w($this);
 			}
 
 			$(document).on(eventName, el, fun);
@@ -204,13 +203,17 @@
 					}
 
 					if (res.res > 0) {
-						w('ok');
-						prompt.show({
-							text: '添加成功',
-							position: 'bottom',
+
+						msg.s({
+							title: "添加成功",
+							bottom: '80px'
 						});
+
+						// prompt.show({
+						// 	text: '添加成功',
+						// 	position: 'bottom',
+						// });
 					} else {
-						e(res);
 					}
 
 				};
@@ -221,6 +224,10 @@
 
 		}
 
+		msg.s({
+			title: "添加成功",
+			bottom: '80px'
+		});
 
 	</script>
 </body>

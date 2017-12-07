@@ -330,10 +330,8 @@
 					var ent = info[i];
 
 					if (!ent.item) {
-
-						prompt.show({
-							text: '请选择' + ent.title,
-							position: 'bottom',
+						msg.s({
+							title: '请选择' + ent.title,
 						});
 
 						return;
@@ -406,6 +404,9 @@
 		}());
 
 		function appAdd(app, title) {
+
+
+
 
 			layer.prompt({
 				title: title
@@ -682,7 +683,8 @@
 
 
 		(function () {
-			var eventName = 'click touchstart';
+
+			var eventName = 'click touchend';
 			var el = '#postOrder';
 			var fun = function (event) {
 				postOrder();
@@ -691,7 +693,6 @@
 			$(document).on(eventName, el, fun);
 
 		}());
-
 
 
 		// showPanel('address');
@@ -743,10 +744,10 @@
 
 			if (order.length <= 0) {
 
-				prompt.show({
-					text: '请先选择商品~',
-					position: 'bottom'
-				})
+				msg.s({
+					title: "请先选择商品~",
+				});
+
 				return;
 			}
 

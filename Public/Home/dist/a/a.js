@@ -187,8 +187,6 @@ var tool = {
 
 
 
-
-
 function showPanel(index) {
 
 
@@ -224,15 +222,37 @@ function heidPanel(index) {
 
 init();
 function init() {
-	(function () {
-		var eventName = 'click touchstart';
-		var el = '.zz-box,.close';
-		var fun = function (event) {
-			heidPanel();
-		}
-		$(el).on(eventName, fun);
-	}());
 
+	var eventName = 'click touchstart';
+	var el = '.zz-box,.close';
+	var fun = function (event) {
+		heidPanel();
+	}
+	$(el).on(eventName, fun);
+
+}
+
+
+var msg = {
+	s: function (conf) {
+
+		var $msg = $('<div/>')
+		$msg.addClass('msg');
+		$msg.text(conf.title);
+		// $msg.css('bottom', conf.bottom);
+		$msg.appendTo('body');
+		setTimeout(function () {
+			$msg.addClass('active');
+		}, 0);
+
+		setTimeout(function () {
+			$msg.removeClass('active');
+		}, 1000);
+
+		setTimeout(function () {
+			$msg.remove();
+		}, 3000);
+	}
 
 }
 

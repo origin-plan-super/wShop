@@ -34,8 +34,8 @@
 	<div id="user_page">
 		<!--用户的头像和名字部分-->
 		<div class="user-head">
-			<img src="/wShop/Public/Home/dist/source/img/user.png" / id="user_head">
-			<span id="user_name" class="user-name">代码狮</span>
+			<img src="" / id="user_head">
+			<span id="user_name" class="user-name"></span>
 		</div>
 		<!--个人中心下边的列表-->
 		<ul class="a-list list-lg">
@@ -109,7 +109,13 @@
 	<script type="text/javascript">
 		//			isNav(".am-header");
 
-		w('<?php echo ($user_info); ?>');
+
+		var user_info = JSON.parse('<?php echo ($user_info); ?>');
+
+		w(user_info);
+		// headimgurl
+		$('#user_name').text(user_info.nickname);
+		$('#user_head').attr('src', user_info.headimgurl);
 
 		// getUserInfo('<?php echo ($openid); ?>', '<?php echo ($access_token); ?>');
 

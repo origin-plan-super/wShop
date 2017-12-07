@@ -255,7 +255,7 @@
 	<script src="/wShop/Public/Home/dist/shopBag/js/shopBag.js" type="text/javascript" charset="utf-8"></script>
 	<script>
 		(function () {
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '.bag-panel';
 			var fun = function (event) {
 
@@ -337,7 +337,7 @@
 		// okStyle
 
 		(function () {
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '#okStyle';
 			var fun = function (event) {
 
@@ -410,7 +410,7 @@
 			},
 		};
 		(function () {
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '.style-item';
 			var fun = function (event) {
 
@@ -453,7 +453,7 @@
 
 
 		(function () {
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '.bag-edit';
 			var fun = function (event) {
 
@@ -486,7 +486,7 @@
 
 
 		(function () {
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '.bag-add';
 			var fun = function (event) {
 
@@ -504,7 +504,7 @@
 
 		}());
 		(function () {
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '.bag-red';
 			var fun = function (event) {
 
@@ -528,7 +528,7 @@
 
 
 		(function () {
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '.bag-del';
 			var fun = function (event) {
 
@@ -555,7 +555,7 @@
 
 
 		(function () {
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '.isAll';
 			var fun = function (event) {
 
@@ -703,7 +703,8 @@
 
 
 		(function () {
-			var eventName = 'click';
+
+			var eventName = 'click touchend';
 			var el = '#postOrder';
 			var fun = function (event) {
 				postOrder();
@@ -714,12 +715,11 @@
 		}());
 
 
-
 		// showPanel('address');
 		var address;
 		// = ;
 		(function () {
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '.address-list-item';
 			var fun = function (event) {
 

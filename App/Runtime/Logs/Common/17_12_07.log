@@ -682,3 +682,237 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
 ERR: 无法加载模块:Public
 
+[ 2017-12-07T17:04:34+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:04:34+08:00 ] 192.168.1.196 /wShop/Public/vendor/swiper/3.4.2/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:04:36+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:05:01+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001373s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:08:22+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:08:22+08:00 ] 192.168.1.196 /wShop/Public/vendor/swiper/3.4.2/maps/swiper.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:08:27+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:08:30+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:08:31+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:08:48+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:08:54+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:08:57+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:10:09+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001853s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:10:37+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:10:43+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:11:04+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:11:08+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:11:13+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:11:16+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:11:22+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:11:26+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:11:48+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001280s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:11:53+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:12:06+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:12:17+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:12:22+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:12:31+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:12:46+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:12:57+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:13:02+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:13:07+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:13:20+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:13:22+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:13:26+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:13:31+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:13:33+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:13:36+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:13:39+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+ERR: 无法加载模块:Public
+
+[ 2017-12-07T17:13:46+08:00 ] 192.168.1.196 /wShop/Public/vendor/bootstrap/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+ERR: 无法加载模块:Public
+

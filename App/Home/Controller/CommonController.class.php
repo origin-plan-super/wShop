@@ -20,8 +20,8 @@ class CommonController extends Controller {
     //ThinkPHP提供的构造方法
     public function _initialize() {
         
-        // session('openid',null);
-        // session('openid','13914896237');
+        session('openid',null);
+        session('openid','13914896237');
         if (empty(session('openid'))) {
             
             

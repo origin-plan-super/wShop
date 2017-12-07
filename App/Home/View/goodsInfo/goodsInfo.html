@@ -209,12 +209,13 @@
 					}
 
 					if (res.res > 0) {
-						prompt.show({
-							text: '添加成功',
-							position: 'bottom',
+
+						msg.s({
+							title: "添加成功",
+							bottom: '80px'
 						});
+
 					} else {
-						e(res);
 					}
 
 				};
@@ -225,6 +226,10 @@
 
 		}
 
+		msg.s({
+			title: "添加成功",
+			bottom: '80px'
+		});
 
 	</script>
 </body>

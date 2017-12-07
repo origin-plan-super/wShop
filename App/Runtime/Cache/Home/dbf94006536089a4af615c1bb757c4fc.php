@@ -212,7 +212,7 @@
 	<script type="text/javascript">
 
 
-		$(document).on('click', '.top-nav-item', function () {
+		$(document).on('click touchstart', '.top-nav-item', function () {
 
 			var $this = $(this);
 			$('.top-nav-item').removeClass('active');

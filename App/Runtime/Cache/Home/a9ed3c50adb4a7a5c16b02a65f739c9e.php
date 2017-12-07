@@ -310,7 +310,7 @@
 	<script>
 
 		(function () {
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '.goods-item';
 			var fun = function (event) {
 
@@ -324,7 +324,7 @@
 
 		}());
 		(function () {
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '.goods-group-head';
 			var fun = function (event) {
 
@@ -339,7 +339,7 @@
 
 		}());
 		(function () {
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '.gofk';
 			var fun = function (event) {
 
@@ -354,7 +354,7 @@
 		}());
 
 		(function () {
-			var eventName = 'click';
+			var eventName = 'click touchstart';
 			var el = '.txfh';
 			var fun = function (event) {
 
