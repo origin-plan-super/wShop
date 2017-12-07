@@ -27,7 +27,9 @@ class CommonController extends Controller {
             
             
             
-            $url=U('common/_initialize');
+            $url=U('Index/index');
+            
+            
             
             $info= baseAuth($url);
             $openid= $info['openid'];

@@ -19,9 +19,9 @@ class TestController extends Controller{
     
     public function test(){
         dump(F('user'));
+        $url=U('Index/Index/');
+        dump($url);
     }
-    
-    
     
     public function aaa(){
     }
