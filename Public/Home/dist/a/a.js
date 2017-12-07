@@ -149,14 +149,14 @@ var tool = {
 
 		$alert.appendTo('body');
 
-		$alert.find('.yes').on('click', function () {
+		$alert.find('.yes').on('click touchstart', function () {
 			if (conf.yes != null) {
 				conf.yes();
 			}
 			tool.hide($alert, $zz);
 		});
 
-		$alert.find('.no').on('click', function () {
+		$alert.find('.no').on('click touchstart', function () {
 			if (conf.no != null) {
 				conf.no();
 			}
@@ -225,7 +225,7 @@ function heidPanel(index) {
 init();
 function init() {
 	(function () {
-		var eventName = 'click';
+		var eventName = 'click touchstart';
 		var el = '.zz-box,.close';
 		var fun = function (event) {
 			heidPanel();
