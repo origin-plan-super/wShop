@@ -97,6 +97,13 @@ class ShopBagController extends CommonController{
         
         $this->assign('address',$address);
         
+        $where=[];
+        $where['openid']=$openid;
+        $where['is_default']=1;
+        $address_is_default=$model->where($where)->find();
+        
+        $this->assign('address_is_default',$address_is_default['address_id']);
+        
         
         
         $this->display();

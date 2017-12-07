@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>测试</title>
     <link rel="stylesheet" href="Public/vendor/bootstrap4/css/bootstrap.min.css">
 
 
@@ -55,6 +55,28 @@
     <script>
 
 
+
+
+
+        (function () {
+
+            var url = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxc5919bd34da8b695&secret=87e678bca54b92f8c7213e1ba9f12963';
+            var obj = {
+
+            };
+            var fun = function (res) {
+                w(res);
+                try {
+                    res = JSON.parse(res);
+                } catch (error) {
+                    //转换错误
+                    return
+                }
+
+            };
+            $.get(url, obj, fun);
+
+        }());
 
 
 

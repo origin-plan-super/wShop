@@ -219,7 +219,7 @@
 										<!-- <a href='/wShop/index.php/Home/Order/remind/order_id/<?php echo ($vo["order_info"]["order_id"]); ?>' class="tool-btn">提醒发货</a> --><?php endif; ?>
 									<?php if($index === 4 ): ?><a href='/wShop/index.php/Home/Order/ok/order_id/<?php echo ($vo["order_info"]["order_id"]); ?>/pages/<?php echo ($index); ?>' class="tool-btn">确认收货</a>
 
-										<br> 【快递单号】<?php echo ($vo["order_info"]["order_on"]); ?>
+										<br>【快递单号】<?php echo ($vo["order_info"]["order_on"]); ?>
 										<br>【快递公司】<?php echo ($vo["order_info"]["order_gs"]); endif; ?>
 									<?php if($index === 5 ): ?><a href='/wShop/index.php/Home/Order/sc/order_id/<?php echo ($vo["order_info"]["order_id"]); ?>/pages/<?php echo ($index); ?>' class="tool-btn">售后</a><?php endif; ?>
 									<?php if($index === 6 ): ?><div style="color:#f00;padding:5px 20px ;">

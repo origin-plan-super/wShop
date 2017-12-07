@@ -98,7 +98,7 @@
 	</ul>
 
 
-	<div class="bag-bottom">
+	<div class="bag-bottom" style="text-overflow: ellipsis;white-space: nowrap;">
 
 		<div class="bag-bottom-left">
 			<span class="isAll">
@@ -107,7 +107,7 @@
 				全选
 			</span>
 
-			<span class="money">
+			<span class="money" style="text-overflow: ellipsis;white-space: nowrap;">
 				总价：
 				<span id="sum">0</span>￥
 			</span>
@@ -190,9 +190,13 @@
 					</div>
 				</empty>
 				<volist name='address' id='vol'>
+					<!-- style="opacity: 1;" -->
 
-					<div class="address-list-item" data-id='{$vol.address_id}'>
-						<span class="address-list-item-active">
+
+
+
+					<div class="address-list-item " data-id='{$vol.address_id}'>
+						<span class="address-list-item-active" style='<if condition=" $vol.is_default == 1 "> opacity: 1;</if> '>
 							<i class="fa fa-truck"></i>
 						</span>
 						<span class="address-list-item-title">
@@ -201,7 +205,6 @@
 						<span class="address-list-item-info">
 							{$vol.location}
 						</span>
-
 					</div>
 
 				</volist>
@@ -693,7 +696,7 @@
 
 		// showPanel('address');
 		var address;
-
+		// = ;
 		(function () {
 			var eventName = 'click';
 			var el = '.address-list-item';
@@ -709,12 +712,15 @@
 			$(document).on(eventName, el, fun);
 
 		}());
+
 		function postOrder() {
 
-			if (address == null) {
-				showPanel('address');
-				return;
-			}
+			address = '{$address_is_default}';
+
+			// if (!address) {
+			// 	showPanel('address');
+			// 	return;
+			// }
 
 			var order = [];
 

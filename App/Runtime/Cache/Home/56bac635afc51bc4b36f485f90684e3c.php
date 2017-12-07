@@ -95,7 +95,7 @@
 	</ul>
 
 
-	<div class="bag-bottom">
+	<div class="bag-bottom" style="text-overflow: ellipsis;white-space: nowrap;">
 
 		<div class="bag-bottom-left">
 			<span class="isAll">
@@ -104,7 +104,7 @@
 				全选
 			</span>
 
-			<span class="money">
+			<span class="money" style="text-overflow: ellipsis;white-space: nowrap;">
 				总价：
 				<span id="sum">0</span>￥
 			</span>
@@ -184,8 +184,13 @@
 				<?php if(empty($address)): ?><div style='text-align: center'>
 						<a href="/wShop/index.php/Home/address/add" type="button" class="am-btn am-btn-success">去添加收货地址</a>
 					</div><?php endif; ?>
-				<?php if(is_array($address)): $i = 0; $__LIST__ = $address;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vol): $mod = ($i % 2 );++$i;?><div class="address-list-item" data-id='<?php echo ($vol["address_id"]); ?>'>
-						<span class="address-list-item-active">
+				<?php if(is_array($address)): $i = 0; $__LIST__ = $address;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vol): $mod = ($i % 2 );++$i;?><!-- style="opacity: 1;" -->
+
+
+
+
+					<div class="address-list-item " data-id='<?php echo ($vol["address_id"]); ?>'>
+						<span class="address-list-item-active" style='<?php if( $vol["is_default"] == 1 ): ?>opacity: 1;<?php endif; ?> '>
 							<i class="fa fa-truck"></i>
 						</span>
 						<span class="address-list-item-title">
@@ -194,7 +199,6 @@
 						<span class="address-list-item-info">
 							<?php echo ($vol["location"]); ?>
 						</span>
-
 					</div><?php endforeach; endif; else: echo "" ;endif; ?>
 
 			</div>
@@ -713,7 +717,7 @@
 
 		// showPanel('address');
 		var address;
-
+		// = ;
 		(function () {
 			var eventName = 'click';
 			var el = '.address-list-item';
@@ -729,12 +733,15 @@
 			$(document).on(eventName, el, fun);
 
 		}());
+
 		function postOrder() {
 
-			if (address == null) {
-				showPanel('address');
-				return;
-			}
+			address = '<?php echo ($address_is_default); ?>';
+
+			// if (!address) {
+			// 	showPanel('address');
+			// 	return;
+			// }
 
 			var order = [];
 

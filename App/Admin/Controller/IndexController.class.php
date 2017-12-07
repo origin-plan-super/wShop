@@ -30,6 +30,7 @@ class IndexController extends CommonController {
                 
                 $this -> assign('admin_url', U(session('admin_url')));
                 $this -> display();
+                
             } else {
                 $this -> display();
             }

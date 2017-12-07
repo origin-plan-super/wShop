@@ -362,7 +362,55 @@
         }
 
         .hr-black {
-            background-color: #777777;
+            background-color: #222;
+        }
+
+        .layui-layout-admin .layui-logo {
+            line-height: 3.4em;
+        }
+
+        .layui-layout-admin .layui-side {
+            top: 3.4em;
+
+        }
+
+        .layui-nav-tree .layui-nav-item a {
+            height: 3.7em;
+            line-height: 3.7em;
+        }
+
+        .layui-layout-admin .layui-header {
+            background-color: #2a2a2a;
+            height: 3.7em;
+
+        }
+
+        .layui-nav .layui-nav-item {
+            height: 3.7em;
+            line-height: 3.7em;
+        }
+
+        .layui-layout-admin .layui-header * {
+            color: #ffffff;
+        }
+
+        .layui-bg-black {
+            background-color: #2a2a2a!important;
+        }
+
+        .layui-nav {
+            border-top: solid 1px #222;
+            background-color: #2a2a2a;
+            color: #fff;
+        }
+
+        .layui-nav-tree .layui-nav-child dd.layui-this,
+        .layui-nav-tree .layui-nav-child dd.layui-this a,
+        .layui-nav-tree .layui-this,
+        .layui-nav-tree .layui-this>a,
+        .layui-nav-tree .layui-this>a:hover {
+            background-color: #ddd;
+            color: #000;
         }
     </style>
 </head>
