@@ -216,7 +216,7 @@ function test(content) {
             layer.msg('品牌：【' + brand_title + '】不存在！', {
                 anim: 6
             });
-            $('#ok').show();
+            $('#ok').hide();
             return;
         }
         if (list[brand_title].class_1[class_title_1] == null) {
@@ -228,7 +228,7 @@ function test(content) {
             layer.msg('一级分类：【' + class_title_1 + '】不存在！', {
                 anim: 6
             });
-            $('#ok').show();
+            $('#ok').hide();
             return;
         }
         if (list[brand_title].class_1[class_title_1].class_2[class_title_2] == null) {
@@ -241,7 +241,7 @@ function test(content) {
             layer.msg('二级分类：【' + class_title_2 + '】不存在！', {
                 anim: 6
             });
-            $('#ok').show();
+            $('#ok').hide();
             return;
 
         }
