@@ -44,8 +44,9 @@ class LoginController extends Controller{
         
         $code=I('get.code');
         $nsukey=I('get.nsukey');
-        $ip='127.0.0.1:12138';
-        echo "<h1><a href='http://$ip/wShop/test.html'>回去</a></h1>";
+        $ip='120.78.162.200:12138';
+        // $ip='127.0.0.1:12138';
+        echo "<h1><a href='http://$ip/wShop/login.html'>回去</a></h1>";
         $url= "https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx9b7ab18e61268efb&secret=bcd46807674b9448617438256db6cada&code=$code&grant_type=authorization_code";
         $this->assign('url',$url);
         $this->display();
