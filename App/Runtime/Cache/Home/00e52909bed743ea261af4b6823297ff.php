@@ -85,9 +85,10 @@
 	</div>
 	<!--底部的导航栏 开始-->
 
-	<a href="/wShop/index.php/Home/query/query" class="query">
-    <i class="iconfont icon-fangdajing"></i>
-</a>
+	<?php if([ss] != 3): ?><a href="/wShop/index.php/Home/query/query" class="query">
+        <i class="iconfont icon-fangdajing"></i>
+    </a><?php endif; ?>
+
 
 <!--底部导航栏开始-->
 <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default" id="" style="">
@@ -143,7 +144,6 @@
 			w(1);
 
 		}
-
 
 		var swiperH = new Swiper('.swiper-container-h', {
 			spaceBetween: 50,

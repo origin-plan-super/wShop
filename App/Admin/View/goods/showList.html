@@ -47,12 +47,25 @@
 
 
     <div class="layui-row layui-form">
-        <div class="layui-col-md4">
+        <div class="layui-col-md12">
             <div class="layui-inline">
-                <input class="layui-input" id="key" placeholder="搜索" autocomplete="off">
+                <input class="layui-input" id="reload" placeholder="搜索" autocomplete="off">
             </div>
-            <button class="layui-btn" id="reload" data-type="reload">搜索</button>
-
+            <button class="layui-btn reload" data-type="reload">
+                <i class="layui-icon">&#xe615;</i>搜索
+            </button>
+            <div class="layui-inline">
+                <input class="layui-input" id="reload_brand" placeholder="品牌搜索" autocomplete="off">
+            </div>
+            <button class="layui-btn reload" data-type="reload_brand">
+                <i class="layui-icon">&#xe857;</i>品牌搜索
+            </button>
+            <div class="layui-inline">
+                <input class="layui-input" id="reload_class" placeholder="分类搜索" autocomplete="off">
+            </div>
+            <button class="layui-btn reload" data-type="reload_class">
+                <i class="fa fa-th-large"></i> 分类搜索
+            </button>
         </div>
 
     </div>
@@ -374,9 +387,11 @@
         /**
         数据搜索
         */
-        $(document).on('click', '#reload', function () {
+        $(document).on('click', '.reload', function () {
 
-            var key = $('#key').val();
+            var type = $(this).attr('data-type');
+
+            var key = $('#' + type).val();
             var key_where = 'goods_id|money|goods_title';
             //执行重载
             tableIns.reload({
@@ -386,7 +401,9 @@
                 , where: {
                     table: 'goods',
                     key: key,
-                    key_where: key_where
+                    key_where: key_where,
+                    type: type
+
                 }
                 , done: function (res, curr, count) {
                     //如果是异步请求数据方式，res即为你接口返回的信息。
@@ -400,28 +417,15 @@
                     console.log(count);
                 }
             });
-
         });
+
+
+
 
         $('#add').on('click', function () {
 
 
             window.open('__CONTROLLER__/add');
-            return;
-
-            layer.open({
-                type: 2,
-                title: '新增优惠码',
-                shadeClose: true,
-                shade: 0.3,
-                maxmin: true, //开启最大化最小化按钮
-                area: ['893px', '600px'],
-                content: '__CONTROLLER__/add'
-                , cancel: function (index, layero) {
-                    tableIns.reload();
-                }
-
-            });
 
         });
 

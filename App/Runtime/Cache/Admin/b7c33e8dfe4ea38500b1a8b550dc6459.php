@@ -24,9 +24,30 @@
 
 <script src="/wShop/Public/Admin/dist/tool/tool.js"></script>
 
+<style>
+    /* .save-tool {
+        position: fixed;
+        right: 10px;
+        bottom: 80px;
+    }
+
+    .save-tool .layui-btn {
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #eee;
+    } */
+
+    .layui-btn {
+        /* background-color: #777; */
+        /* color: #fff; */
+    }
+
+    .layui-body {}
+</style>
 
 <script>
-
 
 
     function getLocalTime(nS) {
@@ -356,12 +377,7 @@
 
     <h3>品牌：【<?php echo ($brand["brand_title"]); ?>】的分类管理</h3>
 
-    <div class="checkbox checkbox-primary">
-        <input id="checkbox2" type="checkbox" checked="">
-        <label for="checkbox2">
-            Primary
-        </label>
-    </div>
+
     <div class="class-tool">
 
         <div class="class-tool-item add" data-type='1'>

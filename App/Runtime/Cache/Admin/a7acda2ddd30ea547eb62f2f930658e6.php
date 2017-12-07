@@ -23,9 +23,23 @@
 
 <script src="/wShop/Public/Admin/dist/tool/tool.js"></script>
 
+<style>
+    /* .save-tool {
+        position: fixed;
+        right: 10px;
+        bottom: 80px;
+    }
+
+    .save-tool .layui-btn {
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #eee;
+    } */
+</style>
 
 <script>
-
 
 
     function getLocalTime(nS) {
@@ -400,7 +414,7 @@
             <div class="layui-block">
                 <label class="layui-form-label">货号</label>
                 <div class="layui-input-inline" style="width: 300px;">
-                    <input type="number" name="money" placeholder="￥" value="<?php echo ($goods["money"]); ?>" autocomplete="off" class="layui-input">
+                    <input type="text" name="goods_no" placeholder="￥" value="<?php echo ($goods["goods_no"]); ?>" autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
@@ -542,22 +556,25 @@
         </div>
 
         <!--  -->
-
+        <div class="layui-form-item">
+            <div class="layui-input-block save-tool">
+                <button class="layui-btn " lay-submit lay-filter="*">
+                    保存
+                </button>
+            </div>
+        </div>
+        <!--  -->
         <div class="layui-form-item">
             <label class="layui-form-label">详情</label>
             <div class="layui-input-block">
-                <div class="layui-col-md12" style="z-index: 1;">
+                <div class="layui-col-md12" style="z-index: 1;max-width:90%">
                     <script id="container" name="info" style="width: 100%;" type="text/plain" lay-verify='required'><?php echo (htmlspecialchars_decode($goods["info"])); ?>
                     </script>
                 </div>
             </div>
         </div>
 
-        <div class="layui-form-item">
-            <div class="layui-input-block">
-                <button class="layui-btn" lay-submit lay-filter="*">保存</button>
-            </div>
-        </div>
+
     </form>
 
     <!-- 引入 etpl -->

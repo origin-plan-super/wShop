@@ -23,9 +23,30 @@
 
 <script src="/wShop/Public/Admin/dist/tool/tool.js"></script>
 
+<style>
+    /* .save-tool {
+        position: fixed;
+        right: 10px;
+        bottom: 80px;
+    }
+
+    .save-tool .layui-btn {
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #eee;
+    } */
+
+    .layui-btn {
+        /* background-color: #777; */
+        /* color: #fff; */
+    }
+
+    .layui-body {}
+</style>
 
 <script>
-
 
 
     function getLocalTime(nS) {
@@ -391,7 +412,7 @@
         }
 
         .layui-layout-admin .layui-header * {
-            color: #ffffff;
+            color: #ccc;
         }
 
         .layui-bg-black {
@@ -413,8 +434,26 @@
             color: #333;
         }
 
+        .layui-nav .layui-this:after,
+        .layui-nav-bar,
+        .layui-nav-tree .layui-nav-itemed:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 5px;
+            background-color: #eee;
+            transition: all .2s;
+            -webkit-transition: all .2s;
+        }
+
         .layui-nav-tree .layui-nav-bar {
             background-color: #eee;
+        }
+
+        .layui-nav-tree .layui-nav-item a:hover {
+            background-color: #555;
+            color: #ffffff;
         }
     </style>
 </head>
@@ -422,12 +461,12 @@
 <body>
     <div class="layui-layout layui-layout-admin">
         <div class="layui-header">
-            <div class="layui-logo">微商城</div>
+            <div class="layui-logo">
+                <a href="">微商城</a>
+            </div>
             <!-- 头部区域（可配合layui已有的水平导航） -->
 
             <ul class="layui-nav layui-layout-right">
-
-
                 <li class="layui-nav-item">
                     <a href="javascript:;" data-src='Config/showList'>当前账户：<?php echo (session('admin_id')); ?></a>
                 </li>

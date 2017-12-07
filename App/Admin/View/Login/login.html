@@ -7,55 +7,103 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>微商城后台登录</title>
     <link href="__VENDOR__/layui/css/layui.css" rel="stylesheet" type="text/css">
+    <link href="__VENDOR__/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!-- <link href="__VENDOR__/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"> -->
 
     <style>
         body {
             background-color: #f5f8fa;
+            font-family: '微软雅黑';
+            background-color: rgb(30, 30, 30);
         }
 
-        .box {
-            display: table;
-            width: 100%;
-            height: 100vh;
-        }
-
-        .box-body {
-            display: table-cell;
-            vertical-align: middle;
-        }
-
-        .form {
-            max-width: 280px;
-            margin-top: -100px;
-            margin-right: auto !important;
-            margin-left: auto !important;
-        }
 
         #admin_code_img {
             margin: 0;
-            height: 100%;
+            height: 40px;
             max-width: 100%;
-            width: 100%;
         }
 
         #basic-addon2 {
             padding: 0;
+            width: 150px;
+            background-color: transparent;
+            border: none;
+        }
+
+        .login-panel {
+            position: fixed;
+            width: 350px;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s;
+        }
+
+
+        .login-head {
+            padding: 13px 0;
+            background-color: #2a2a2a;
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .login-body {
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .form-control {
+            border-radius: 2px;
+            box-shadow: none;
+            padding: 10px;
+            height: auto;
+        }
+
+        .form-control:focus {
+            outline: none;
+            box-shadow: none;
+            border-color: #777;
+        }
+
+        .btn-black {
+            border-radius: 2px;
+            background-color: #4a4a4a;
+            outline: none;
+            color: #ffffff;
+            padding: 10px;
+
+        }
+
+        .btn-black:hover,
+        .btn-black:focus {
+            background-color: #4a4a4a;
+            color: #ffffff;
+            outline: none;
         }
     </style>
 
 </head>
 
+
+
 <body>
 
-    <div class="box">
 
-        <div class="box-body">
+
+    <div class="login-panel">
+        <div class="login-head">
+            <div class="login-title">
+                微商城后台登录
+            </div>
+        </div>
+        <div class="login-body">
+
             <div class="form text-center layui-form">
-                <div class="form-group">
-                    <h2>微商城后台登录</h2>
-                </div>
+
                 <div class="form-group">
                     <input type="text" lay-verify='required' placeholder="用户名" class="form-control" name="admin_id" id="admin_user">
                 </div>
@@ -64,29 +112,28 @@
                 </div>
                 <div class="form-group">
 
-                    <div class="input-group">
+                    <div class="input-group" style="width: 100%">
                         <input type="text" id="admin_code" name="admin_code" lay-verify='required' class="form-control" placeholder="验证码" aria-describedby="basic-addon2">
-
                         <span class="input-group-addon" id="basic-addon2">
                             <img src="" id="admin_code_img">
                         </span>
                     </div>
-
-
                 </div>
                 <div class="form-group">
                     <!-- lay-submit -->
-                    <button lay-submit type="button" class="btn btn-primary" lay-filter="login">登录</button>
+                    <button lay-submit type="button" class="btn  btn-black btn-block" lay-filter="login">登录</button>
                     <!-- <input type="password" lay-verify='required' placeholder="密码" class="form-control" id="admin_pwd"> -->
                 </div>
             </div>
 
+        </div>
+        <div class="login-footer">
 
         </div>
 
-
-
     </div>
+
+
 
 
     <script src="__VENDOR__/Jquery/jquery.js"></script>
@@ -94,9 +141,9 @@
     <script src="__VENDOR__/layer/layer.js"></script>
     <script src="__VENDOR__/layui/layui.js"></script>
     <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
-    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script> -->
     <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
-    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script> -->
     <script>
 
 
@@ -111,15 +158,18 @@
                 // console.log(data.field) //当前容器的全部表单字段，名值对形式：{name: value}
 
                 $.post('__CONTROLLER__/login', data.field, function (res) {
-                    console.log(res);
-                    obj.upCode();
                     res = JSON.parse(res);
-                    layer.msg('code:' + res.res + ' | msg:' + res.msg);
 
                     if (res.res == 0) {
+                        layer.msg(res.msg, {});
                         setTimeout(() => {
                             window.location.href = '{:U("Index/index")}';
                         }, 300);
+                    } else {
+                        obj.upCode();
+                        layer.msg(res.msg, {
+                            anim: 6
+                        });
                     }
 
                 })

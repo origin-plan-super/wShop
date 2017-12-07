@@ -86,8 +86,19 @@ body {
 
 .goods-info {
     padding: 0.5em 1em;
-    font-size: 14px;
+    font-size: 13px;
     background: #FFFFFF;
+    height: 65px;
+}
+
+.goods-info>div:nth-child(1) {
+    font-size: 14px;
+    height: 28px;
+    line-height: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 .goods-list .goods-info a {
@@ -355,6 +366,7 @@ a:hover {
 }
 
 .alert {
+    position: relative;
     z-index: 99999;
     width: 70%;
     background-color: rgba(255, 255, 255, 0.8);
@@ -365,6 +377,12 @@ a:hover {
     transform: translate(-50%, -50%) scale(1.5);
     opacity: 0;
     transition: all 0.3s;
+    padding: 0;
+}
+
+.alert * {
+    background-color: transparent;
+    color: #333;
 }
 
 .alert.active {

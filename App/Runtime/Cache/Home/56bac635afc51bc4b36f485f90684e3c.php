@@ -214,7 +214,7 @@
 
 
 
-	<?php if([ss] == 3): ?><a href="/wShop/index.php/Home/query/query" class="query">
+	<?php if([ss] != 3): ?><a href="/wShop/index.php/Home/query/query" class="query">
         <i class="iconfont icon-fangdajing"></i>
     </a><?php endif; ?>
 

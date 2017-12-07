@@ -30,11 +30,15 @@
 		.am-gotop.am-gotop-fixed.gotop.am-no-layout.am-active[data-am-widget="gotop"] a {
 			bottom: 80px;
 		}
+
+		.goods-info {
+			padding: 0;
+			margin: 0;
+		}
 	</style>
 </head>
 
 <body>
-
 
 	<!--商品详情的顶部大图-->
 	<div class="container-fluid">
@@ -79,7 +83,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="a-essay goods-info" data-am-widget="paragraph" data-am-paragraph="{ tableScrollable: true, pureview: true }"
-				 style="">
+				 style="height:auto">
 					<?php echo (htmlspecialchars_decode($goods["info"])); ?>
 				</div>
 			</div>

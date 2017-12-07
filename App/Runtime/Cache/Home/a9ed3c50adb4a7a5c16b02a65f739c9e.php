@@ -252,9 +252,10 @@
 	<!--选项卡结束-->
 
 	<!--底部导航开始-->
-	<a href="/wShop/index.php/Home/query/query" class="query">
-    <i class="iconfont icon-fangdajing"></i>
-</a>
+	<?php if([ss] != 3): ?><a href="/wShop/index.php/Home/query/query" class="query">
+        <i class="iconfont icon-fangdajing"></i>
+    </a><?php endif; ?>
+
 
 <!--底部导航栏开始-->
 <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default" id="" style="">

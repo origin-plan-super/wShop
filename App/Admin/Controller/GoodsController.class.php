@@ -40,14 +40,35 @@ class GoodsController extends CommonController {
         if(!empty($get['key'])){
             
             $key=$get['key'];
+            $type=$get['type'];
             
-            $key_where= $get['key_where'] ? $get['key_where']: $table.'_id';
+            if($type=='reload_brand'){
+                $brand_model=M('brand');
+                $where=[];
+                $where['brand_title']=$key;
+                $brand_info= $brand_model->where($where)->find();
+                $where['brand_id']=$brand_info['brand_id'];
+            }
             
-            $where[$key_where] = array(
-            'like',
-            "%".$key."%",
-            'OR'
-            );
+            if($type=='reload_class'){
+                $class_model=M('class');
+                $where=[];
+                $where['class_title']=$key;
+                $class_info= $class_model->where($where)->find();
+                $where['class_id_1']=$class_info['class_id'];
+                $where['class_id_2']=$class_info['class_id'];
+            }
+            
+            if($type=='reload'){
+                $key_where= $get['key_where'] ? $get['key_where']: $table.'_id';
+                $where[$key_where] = array(
+                'like',
+                "%".$key."%",
+                'OR'
+                );
+            }
+            
+            $where['_logic'] = 'OR';
             
             $result= $model->limit("$page,$limit")->order('add_time desc')->where($where)->select();
             // $res['sql']=$model->_sql();
@@ -121,19 +142,16 @@ class GoodsController extends CommonController {
         $where['goods_id']=I('get.goods_id');
         $result=$model->where($where)->find();
         
-        if(!empty($result['color'])){
-            $result['color']=explode('|',$result['color']);
-            $result['color']=json_encode($result['color']);
-        }
         
-        if(!empty($result['size'])){
-            $result['size']=explode('|',$result['size']);
-            $result['size']=json_encode($result['size']);
-        }
-        if(!empty($result['size2'])){
-            $result['size2']=explode('|',$result['size2']);
-            $result['size2']=json_encode($result['size2']);
-        }
+        $result['color']=$result['color']?explode('|',$result['color']):[];
+        $result['color']=json_encode($result['color']);
+        
+        
+        $result['size']=$result['size']?explode('|',$result['size']):[];
+        $result['size']=json_encode($result['size']);
+        
+        $result['size2']=$result['size2']?explode('|',$result['size2']):[];
+        $result['size2']=json_encode($result['size2']);
         
         $this->assign('goods',$result);
         $this->display();
