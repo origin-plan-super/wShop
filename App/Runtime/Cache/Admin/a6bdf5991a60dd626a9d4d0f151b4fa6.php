@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>微商城后台</title>
+    <title>售后处理</title>
+    <link rel="stylesheet" href="/wShop/Public/vendor/bootstrap/css/bootstrap.min.css">
     <!-- css -->
 <link href="/wShop/Public/vendor/layui/css/layui.css" rel="stylesheet" type="text/css">
 <link href="/wShop/Public/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -340,187 +341,163 @@
 </script>
 
     <style>
-        #iframeBox {
-            position: absolute;
-            /* height: calc(100%); */
-            bottom: 0;
-            top: 0;
-            left: 0;
-            right: 0;
+        body {
+            /* background-color: rgb(38, 38, 38); */
+            padding-top: 30px;
+            /* padding: 30px 50px; */
         }
 
-        #fream {
-            position: absolute;
-            padding: 0;
-            width: 100%;
-            height: 100%;
+        pre {
+            color: #ccc;
+            border: solid 3px #ccc;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
         }
 
-        .layui-layout-admin .layui-body {
-            top: 60px;
-            bottom: 0;
+        .table {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
         }
 
-        .hr-black {
-            background-color: #777777;
+        .table tr td,
+        .table tr th {
+            vertical-align: middle;
+        }
+
+        .table tr td .vertical-top {
+            vertical-align: top;
+        }
+
+        .progress-bar {
+            transition: all 0.3s;
+        }
+
+        #table {
+            position: relative;
+        }
+
+        .arr-item {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .hover-img {
+            max-width: 500px;
+            border-radius: 5px;
+        }
+
+        [data-mtpis] {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        [data-mtpis]:hover {
+            background-color: #ffc107;
+        }
+
+        .goods-img {
+            max-width: 50px;
         }
     </style>
 </head>
 
 <body>
-    <div class="layui-layout layui-layout-admin">
-        <div class="layui-header">
-            <div class="layui-logo">微商城</div>
-            <!-- 头部区域（可配合layui已有的水平导航） -->
-
-            <ul class="layui-nav layui-layout-right">
 
 
-                <li class="layui-nav-item">
-                    <a href="javascript:;" data-src='Config/showList'>当前账户：<?php echo (session('admin_id')); ?></a>
-                </li>
-                <li class="layui-nav-item">
-                    <a href="<?php echo U('Login/sinOut');?>">退出登录</a>
-                </li>
-            </ul>
-        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>
+                    <span class="label label-primary"><?php echo ($order["sc_type"]); ?></span>
+                    <span class="label label-info"><?php echo ($order["sc_info"]); ?></span>
+                </h3>
+                <br>
+                <?php if($order["state"] == 5): ?>已处理
+                    <span class="glyphicon glyphicon-ok"></span><?php endif; ?>
+                <?php if($order["state"] == 4): ?><h4>
+                        <a class="btn btn-info" href="/wShop/index.php/Admin/Order/sh_ok/order_id/<?php echo ($order["order_id"]); ?>" role="button">确认处理</a>
+                    </h4><?php endif; ?>
 
-        <div class="layui-side layui-bg-black">
-            <div class="layui-side-scroll">
-                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-                <ul class="layui-nav layui-nav-tree" lay-filter="test">
-                    <li class="layui-nav-item">
-                        <a href="javascript:;" data-src='Goods/showList'>商品管理</a>
-                    </li>
-                    <li class="layui-nav-item">
-                        <a href="javascript:;" data-src='Brand/showList'>品牌管理</a>
-                    </li>
-                    <li class="layui-nav-item">
-                        <a href="javascript:;" data-src='Nav/showList'>导航管理</a>
-                    </li>
-                    <hr class="hr-black">
-                    <li class="layui-nav-item">
-                        <a href="javascript:;" data-src='Order/showList'>订单管理</a>
-                    </li>
-                    <li class="layui-nav-item">
-                        <a href="javascript:;" data-src='Config/showList'>账号设置</a>
-                    </li>
-                </ul>
             </div>
         </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
 
-        <div class="layui-body">
-            <!-- 内容主体区域 -->
-            <div id="iframeBox">
-                <!-- <iframe src="/wShop/index.php/Admin/Index/home" id="fream" frameborder="0"></iframe> -->
-                <!-- <iframe src="Exam/showList" id="fream" frameborder="0"></iframe> -->
-                <iframe src="" id="fream" frameborder="0"></iframe>
+                <div class="table-responsive" id="table">
+
+                    <table id="" class="table table-bordered table-hover">
+
+                        <thead class="thead">
+                            <tr>
+                                <th>订单号</th>
+                                <th>用户</th>
+                                <th>收货人</th>
+                                <th>电话</th>
+                                <th>地址</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><?php echo ($order["order_id"]); ?></td>
+                                <td><?php echo ($order["user_name"]); ?></td>
+                                <td><?php echo ($order["people"]); ?></td>
+                                <td><?php echo ($order["phone"]); ?></td>
+                                <td><?php echo ($order["location"]); ?></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <table id="" class="table table-bordered table-hover">
+
+                        <thead class="thead">
+                            <tr>
+                                <!-- <th v-for='(item,index) in th'>{{index}}:{{item}}</th> -->
+                                <th>商品图片</th>
+                                <th>商品id</th>
+                                <th>商品标题</th>
+                                <th>货号</th>
+                                <th>规格</th>
+                                <th>商品详情</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php if(is_array($orderInfo)): $i = 0; $__LIST__ = $orderInfo;if( count($__LIST__)==0 ) : echo "没有订单数据！" ;else: foreach($__LIST__ as $key=>$vol): $mod = ($i % 2 );++$i;?><tr>
+                                    <td data-mtpis='<img class="hover-img" src="/wShop/<?php echo ($vol["head_img"]); ?>" />'>
+                                        <a href="/wShop/<?php echo ($vol["head_img"]); ?>" target="_black">
+                                            <img class="goods-img" src="/wShop/<?php echo ($vol["head_img"]); ?>" />
+                                        </a>
+                                    </td>
+                                    <td><?php echo ($vol["goods_id"]); ?></td>
+                                    <td><?php echo ($vol["goods_title"]); ?></td>
+                                    <td><?php echo ($vol["goods_no"]); ?></td>
+                                    <td><?php echo ($vol["t1_info"]); ?></td>
+                                    <td>
+                                        <a href="/wShop/index.php/Admin/goods/edit/goods_id/<?php echo ($vol["goods_id"]); ?>" target="_black">点击查看</a>
+                                    </td>
+
+                                </tr><?php endforeach; endif; else: echo "没有订单数据！" ;endif; ?>
+                        </tbody>
+
+                    </table>
+                </div>
             </div>
         </div>
 
 
     </div>
 
+    <script rel="stylesheet" href="/wShop/Public/vendor/bootstrap/js/bootstrap.min.js"></script>
+
 
     <script>
 
 
-
-        layui.use('element', function () {
-            var element = layui.element;
-        });
-        $(function () {
-
-
-
-            if ('<?php echo ($admin_url); ?>' != null && '<?php echo ($admin_url); ?>' != '') {
-                $('#fream').attr('src', '<?php echo ($admin_url); ?>');
-            }
-
-            $('.layui-nav-item').each(function (index) {
-                $(this).attr('id', 'item' + index);
-            })
-
-            // w(localStorage.item_id);
-            $(localStorage.item_id).addClass('layui-this');
-
-
-            $(document).on('click', 'a[href="javascript:;" ]', function () {
-                var index = layer.load(1); //加载等待层
-
-                localStorage.item_id = '#' + $(this).parents('.layui-nav-item').attr('id');
-
-                if (!($(this).attr('data-src') == null)) {
-
-                    $.post('', {
-                        url: $(this).attr('data-src')
-                    }, function (date) {
-                        $('#fream').attr('src', date);
-                        layer.close(index);
-                    })
-                }
-
-            })
-
-        });
-
-
-        (function () {
-            var eventName = 'click';
-            var el = '#setUser';
-            var fun = function (event) {
-                var $this = $(this);
-
-                //例子2
-                layer.prompt({
-                    value: '123123',
-                    title: '请输入新密码',
-                }, function (value, index, elem) {
-
-
-
-                    var url = '/wShop/index.php/Admin/Config/setPwd';
-                    var obj = {
-                        admin_id: "<?php echo (session('admin_id')); ?>",
-                        admin_pwd: value
-                    };
-                    var fun = function (res) {
-                        try {
-                            res = JSON.parse(res);
-                        } catch (error) {
-                            //转换错误
-                            layer.msg('修改失败1');
-                            return
-                        }
-
-                        if (res.res > 0) {
-
-                            layer.msg('修改成功');
-                            var url = "<?php echo U('Login/sinOut');?>";
-                            window.location.href = url;
-
-
-                        } else {
-                            layer.msg('修改失败2');
-                        }
-
-                    };
-                    $.post(url, obj, fun);
-
-
-
-
-                });
-
-            }
-
-            $(document).on(eventName, el, fun);
-
-        }());
-
-
-
     </script>
+
 </body>
 
 </html>

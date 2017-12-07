@@ -16,12 +16,9 @@
 */
 namespace Admin\Controller;
 use Think\Controller;
-class OrderController extends Controller{
+class OrderController extends CommonController{
     
-    //构造函数
-    public function _initialize(){
-        
-    }
+   
     //主
     public function index(){
         
@@ -137,9 +134,60 @@ class OrderController extends Controller{
         
         // dump($orderInfo);
         // dump($order);
+    }
+    public function sh(){
         
         
+        $order_id=I('get.order_id');
         
+        $model=M('orderInfo');
+        $where=[];
+        $where['order_id']=$order_id;
+        $orderInfo=$model
+        ->field('t1.*,t2.*,t1.info as t1_info')
+        ->table('wshop_order_info as t1,wshop_goods as t2')
+        ->where('t1.goods_id = t2.goods_id')
+        ->where($where)
+        ->select();
+        
+        
+        $this->assign('orderInfo',$orderInfo);
+        
+        $model=M('order');
+        $where=[];
+        $where['order_id']=$order_id;
+        $order=$model
+        ->field('t1.*,t2.*,t3.*')
+        ->table('wshop_order as t1,wshop_user as t2,wshop_address as t3')
+        ->where('t1.openid = t2.openid AND t1.address_id = t3.address_id')
+        ->where($where)
+        ->find();
+        $this->assign('order',$order);
+        
+        
+        $this->display();
+        
+    }
+    
+    public function sh_ok(){
+        $order_id=I('get.order_id');
+        
+        //=========保存数据=========
+        $model=M('order');
+        //=========条件区
+        $where=[];
+        $where['order_id']=$order_id;
+        //=========保存数据区
+        $save=[];
+        $save['state']=5;
+        $save['edit_time']=time();
+        //=========sql区
+        $result=$model->where($where)->save($save);
+        //=========保存数据end=========
+        $url=U('sh',array(
+        'order_id'=>$order_id
+        ));
+        echo "<script>top.location.href='$url'</script>";
         
         
     }

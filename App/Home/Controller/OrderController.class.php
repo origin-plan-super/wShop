@@ -119,6 +119,7 @@ class OrderController extends CommonController{
             $arr['all'][$value['order_id']]['order_info']['order_money']=$value['order_money'] ;
             $arr['all'][$value['order_id']]['order_info']['sc_info']=$value['sc_info'] ;
             $arr['all'][$value['order_id']]['order_info']['sc_type']=$value['sc_type'] ;
+            $arr['all'][$value['order_id']]['order_info']['state']=$value['state'] ;
             
             // ====
             
@@ -128,6 +129,7 @@ class OrderController extends CommonController{
             $arr[$value['state']][$value['order_id']]['order_info']['order_money']=$value['order_money'] ;
             $arr[$value['state']][$value['order_id']]['order_info']['sc_info']=$value['sc_info'] ;
             $arr[$value['state']][$value['order_id']]['order_info']['sc_type']=$value['sc_type'] ;
+            $arr[$value['state']][$value['order_id']]['order_info']['state']=$value['state'] ;
         }
         
         // dump($arr);

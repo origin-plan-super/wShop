@@ -16,12 +16,9 @@
 */
 namespace Admin\Controller;
 use Think\Controller;
-class CarouselController extends Controller{
+class CarouselController extends CommonController{
     
-    //构造函数
-    public function _initialize(){
-        
-    }
+    
     //主
     public function index(){
         

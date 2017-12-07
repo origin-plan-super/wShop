@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>订单信息</title>
-    <link rel="stylesheet" href="__VENDOR__/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__VENDOR__/bootstrap/css/bootstrap.min.css">
     <include file="App/Admin/View/component/importComponent.html" />
 
     <style>
@@ -77,6 +77,34 @@
 
     <div class="container">
 
+        <if condition='$order.state == 5'>
+
+            <h3>
+                <span class="label label-primary">{$order.sc_type}</span>
+                <span class="label label-info">{$order.sc_info}</span>
+            </h3>
+            <br> 售后已处理
+            <span class="glyphicon glyphicon-ok"></span>
+            <br>
+            <hr>
+        </if>
+
+
+        <if condition='$order.state == 4'>
+
+            <h3>
+                <span class="label label-primary">{$order.sc_type}</span>
+                <span class="label label-info">{$order.sc_info}</span>
+            </h3>
+            <br>
+            <h4>
+                <a class="btn btn-info" href="__CONTROLLER__/sh_ok/order_id/{$order.order_id}" role="button">确认处理</a>
+            </h4>
+            <hr>
+
+        </if>
+
+
         <div class="table-responsive" id="table">
 
             <table id="" class="table table-bordered table-striped table-hover table-darsk table-sms">
@@ -141,7 +169,7 @@
         </div>
     </div>
 
-    <script rel="stylesheet" href="__VENDOR__/bootstrap4/js/bootstrap.min.js"></script>
+    <script rel="stylesheet" href="__VENDOR__/bootstrap/js/bootstrap.min.js"></script>
 
 
     <script>

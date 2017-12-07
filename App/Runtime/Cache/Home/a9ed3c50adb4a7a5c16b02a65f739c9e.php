@@ -204,7 +204,6 @@
 													x<?php echo ($v["num"]); ?>
 												</span>
 											</div>
-
 										</div>
 									</div><?php endforeach; endif; else: echo "没有订单数据！" ;endif; ?>
 
@@ -220,19 +219,21 @@
 										<!-- <a href='/wShop/index.php/Home/Order/remind/order_id/<?php echo ($vo["order_info"]["order_id"]); ?>' class="tool-btn">提醒发货</a> --><?php endif; ?>
 									<?php if($index === 4 ): ?><a href='/wShop/index.php/Home/Order/ok/order_id/<?php echo ($vo["order_info"]["order_id"]); ?>/pages/<?php echo ($index); ?>' class="tool-btn">确认收货</a><?php endif; ?>
 									<?php if($index === 5 ): ?><a href='/wShop/index.php/Home/Order/sc/order_id/<?php echo ($vo["order_info"]["order_id"]); ?>/pages/<?php echo ($index); ?>' class="tool-btn">售后</a><?php endif; ?>
-									<?php if($index === 6 ): endif; ?>
+									<?php if($index === 6 ): ?><div style="color:#f00;padding:5px 20px ;">
+											<div>
+												退款类型：<?php echo ($vo["order_info"]["sc_type"]); ?>
+											</div>
+											<div>
+												退款详情：<?php echo ($vo["order_info"]["sc_info"]); ?>
+											</div>
+											<div>
+												处理结果：
+												<?php if($vo["order_info"]["state"] == 5 ): ?>已处理<?php endif; ?>
+												<?php if($vo["order_info"]["state"] == 4 ): ?>正在处理<?php endif; ?>
+											</div>
+										</div><?php endif; ?>
 								</div>
-								<div style="color:#f00;padding:5px 20px ;">
-									<div>
-										退款类型：<?php echo ($vo["order_info"]["sc_type"]); ?>
-									</div>
-									<div>
-										退款详情：<?php echo ($vo["order_info"]["sc_info"]); ?>
-									</div>
-									<div>
-										处理结果：未处理
-									</div>
-								</div>
+
 							</div><?php endforeach; endif; else: echo "没有订单数据！" ;endif; ?>
 
 

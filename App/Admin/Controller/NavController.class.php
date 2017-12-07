@@ -19,13 +19,8 @@
 
 namespace Admin\Controller;
 use Think\Controller;
-class NavController extends Controller{
-    
-    //构造函数
-    public function _initialize(){
-        
-    }
-    //主
+class NavController extends CommonController{
+ 
     public function index(){
         
     }

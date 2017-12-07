@@ -16,12 +16,8 @@
 */
 namespace Admin\Controller;
 use Think\Controller;
-class BrandController extends Controller{
+class BrandController extends CommonController{
     
-    //构造函数
-    public function _initialize(){
-        
-    }
     //主
     public function index(){
         

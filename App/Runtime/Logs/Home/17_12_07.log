@@ -12935,3 +12935,669 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
 
+[ 2017-12-07T07:34:22+08:00 ] 127.0.0.1 /wShop/index.php/home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.148856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.043732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.043784s ]
+SQL: SHOW COLUMNS FROM `wshop_nav` [ RunTime:1.0439s ]
+SQL: SELECT * FROM `wshop_nav` ORDER BY sort asc  [ RunTime:0.3271s ]
+SQL: SHOW COLUMNS FROM `wshop_up` [ RunTime:0.0365s ]
+SQL: SHOW COLUMNS FROM `wshop_goods` [ RunTime:0.0865s ]
+SQL: SHOW COLUMNS FROM `wshop_carousel` [ RunTime:0.0702s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '9ff823dc919d143c538bc83f85cd65aa'  [ RunTime:0.2259s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '9ff823dc919d143c538bc83f85cd65aa' ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '7dc92b96e6e2bbc9423f834d2217ec9d'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '7dc92b96e6e2bbc9423f834d2217ec9d' ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '6cbb16ac4ae2a5b02cf48032438edfd8'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '6cbb16ac4ae2a5b02cf48032438edfd8' ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '3b68eabcc692c932a5e869b6d55666dc'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '3b68eabcc692c932a5e869b6d55666dc' ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '45ab47437e616a578130626f07373cbf'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '45ab47437e616a578130626f07373cbf' ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '00ad131c8293e4b8706f039072fe97dc'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '00ad131c8293e4b8706f039072fe97dc' ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = 'c35d345cc22ef120f654d1dbfc88b4b4'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = 'c35d345cc22ef120f654d1dbfc88b4b4' ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '841855c01258e5f2ea903dda4e96a488'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '841855c01258e5f2ea903dda4e96a488' ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.183058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.183112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.630993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.631046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.037214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.037258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.058449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.058500s ]
+
+[ 2017-12-07T07:34:32+08:00 ] 127.0.0.1 /wShop/index.php/home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `wshop_nav` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wshop_nav` ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wshop_up` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wshop_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wshop_carousel` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '9ff823dc919d143c538bc83f85cd65aa'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '9ff823dc919d143c538bc83f85cd65aa' ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '7dc92b96e6e2bbc9423f834d2217ec9d'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '7dc92b96e6e2bbc9423f834d2217ec9d' ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '6cbb16ac4ae2a5b02cf48032438edfd8'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '6cbb16ac4ae2a5b02cf48032438edfd8' ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '3b68eabcc692c932a5e869b6d55666dc'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '3b68eabcc692c932a5e869b6d55666dc' ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '45ab47437e616a578130626f07373cbf'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '45ab47437e616a578130626f07373cbf' ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '00ad131c8293e4b8706f039072fe97dc'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '00ad131c8293e4b8706f039072fe97dc' ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = 'c35d345cc22ef120f654d1dbfc88b4b4'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = 'c35d345cc22ef120f654d1dbfc88b4b4' ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '841855c01258e5f2ea903dda4e96a488'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '841855c01258e5f2ea903dda4e96a488' ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2017-12-07T07:34:35+08:00 ] 127.0.0.1 /wShop/index.php/home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `wshop_nav` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wshop_nav` ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wshop_up` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wshop_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wshop_carousel` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '9ff823dc919d143c538bc83f85cd65aa'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '9ff823dc919d143c538bc83f85cd65aa' ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '7dc92b96e6e2bbc9423f834d2217ec9d'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '7dc92b96e6e2bbc9423f834d2217ec9d' ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '6cbb16ac4ae2a5b02cf48032438edfd8'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '6cbb16ac4ae2a5b02cf48032438edfd8' ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '3b68eabcc692c932a5e869b6d55666dc'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '3b68eabcc692c932a5e869b6d55666dc' ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '45ab47437e616a578130626f07373cbf'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '45ab47437e616a578130626f07373cbf' ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '00ad131c8293e4b8706f039072fe97dc'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '00ad131c8293e4b8706f039072fe97dc' ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = 'c35d345cc22ef120f654d1dbfc88b4b4'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = 'c35d345cc22ef120f654d1dbfc88b4b4' ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_up` WHERE `nav_id` = '841855c01258e5f2ea903dda4e96a488'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_carousel` WHERE `nav_id` = '841855c01258e5f2ea903dda4e96a488' ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2017-12-07T07:34:37+08:00 ] 127.0.0.1 /wShop/index.php/Home/Brand/brand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `wshop_brand` [ RunTime:0.0772s ]
+SQL: SELECT * FROM `wshop_brand` ORDER BY brand_title asc  [ RunTime:0.0824s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001550s ]
+
+[ 2017-12-07T07:34:42+08:00 ] 127.0.0.1 /wShop/index.php/Home/ShopBag/shopBag
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `wshop_bag` [ RunTime:0.1312s ]
+SQL: SHOW COLUMNS FROM `wshop_bag` [ RunTime:0.0007s ]
+SQL: SELECT t1.*,t2.* FROM wshop_bag as t1,wshop_goods as t2 WHERE `openid` = '13914896237' AND ( t1.goods_id = t2.goods_id ) ORDER BY t1.add_time desc  [ RunTime:0.3157s ]
+SQL: SHOW COLUMNS FROM `wshop_goods` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = 'e5aea1412121efa16cd86f52797cc952' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_bag` WHERE `bag_id` = 'c515e74563e7dc5a5ac23e3cb91973d0' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` WHERE `goods_id` = '9f248b4d7eccfa730864f664756cf5b7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_bag` WHERE `bag_id` = 'e90f374a4f5dccf3b598e1cc028bbc22' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wshop_address` [ RunTime:0.1648s ]
+SQL: SELECT * FROM `wshop_address` WHERE `openid` = '13914896237' ORDER BY add_time desc  [ RunTime:0.0465s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2017-12-07T07:34:51+08:00 ] 127.0.0.1 /wShop/index.php/Home/User/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2017-12-07T07:34:55+08:00 ] 127.0.0.1 /wShop/index.php/Home/Address/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `wshop_address` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wshop_address` WHERE `openid` = '13914896237' ORDER BY add_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2017-12-07T07:34:59+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0392s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0005s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0353s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2017-12-07T07:36:01+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0006s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001128s ]
+
+[ 2017-12-07T07:36:19+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0005s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2017-12-07T08:08:27+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0017s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 233 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 233 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2017-12-07T08:08:44+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0004s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: state D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 233 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 233 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2017-12-07T08:09:24+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0005s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2017-12-07T08:09:37+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0006s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000991s ]
+
+[ 2017-12-07T08:09:46+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0004s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+NOTIC: [8] Undefined index: state == 5 D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 230 行.
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2017-12-07T08:10:01+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0005s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001134s ]
+
+[ 2017-12-07T08:10:06+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0008s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000466s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000686s ]
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2017-12-07T08:10:21+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0006s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 231 行.
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001912s ]
+
+[ 2017-12-07T08:10:43+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0023s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 232 行.
+NOTIC: [8] Use of undefined constant order_info - assumed 'order_info' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 233 行.
+NOTIC: [8] Array to string conversion D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 233 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' D:\database\Project\working\company\wShop\App\Runtime\Cache\Home\a9ed3c50adb4a7a5c16b02a65f739c9e.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2017-12-07T08:11:10+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0011s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002468s ]
+
+[ 2017-12-07T08:11:16+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0004s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001704s ]
+
+[ 2017-12-07T08:46:03+08:00 ] 127.0.0.1 /wShop/index.php/Home/Order/showList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wshop_order` [ RunTime:0.0005s ]
+SQL: SELECT t1.*,t2.*,t3.*,t2.info as t2_info,t3.money as goods_money,t1.money as order_money,t1.add_time as t1_add_time FROM wshop_order as t1,wshop_order_info as t2,wshop_goods as t3 WHERE ( t1.order_id = t2.order_id AND t2.goods_id = t3.goods_id ) AND `openid` = '13914896237' ORDER BY t1.state asc,t1.add_time desc  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+

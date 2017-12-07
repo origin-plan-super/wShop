@@ -77,12 +77,45 @@
     </script>
 
 
-    <script type="text/html" id="bar_is_up">
+    <script type="text/html" id="bar_state">
 
-            <a class="layui-btn layui-btn-warm layui-btn-xs" lay-event="up">
-                    管理
-            </a>
-      
+
+        
+                {{# if(d.state == 0){  }}
+                <!-- <a class="layui-btn layui-btn-warm layui-btn-xs" lay-event="up"> -->
+                待付款
+                <!-- </a> -->
+                {{# } }}
+
+                {{# if(d.state == 1){  }}
+                <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="up">
+                去发货
+                </a>
+                {{# } }}
+
+                {{# if(d.state == 2){  }}
+                <a class="layui-btn layui-btn-xs" lay-event="up">
+                已发货
+                </a>
+                {{# } }}
+
+                {{# if(d.state == 3){  }}
+                <!-- <a class="layui-btn layui-btn-warm layui-btn-xs" lay-event="up"> -->
+                交易成功
+                <!-- </a> -->
+                {{# } }}
+
+                {{# if(d.state == 4){  }}
+                <a class="layui-btn layui-btn-warm layui-btn-xs" href='__CONTROLLER__/sh/order_id/{{d.order_id}}' target='_black' >
+                售后处理
+                </a>
+                {{# } }}
+
+                {{# if(d.state == 5){  }}
+                售后已处理
+                {{# } }}
+
+                    
     </script>
 
 
@@ -104,6 +137,7 @@
                 , where: {
                     table: 'order',
                 }
+                , order: 'add_time desc'
                 , response: {
                     statusCode: 1 //成功的状态码，默认：0
                 }
@@ -118,7 +152,7 @@
                     , { field: 'money', title: '订单总价', edit: 'text', width: 130, sort: true }
                     , { field: 'add_time', title: '添加时间', width: 200, sort: true }
                     , { field: 'edit_time', title: '最后修改时间', width: 200, sort: true }
-                    // , { fixed: 'right', width: 100, align: 'center', title: '发货', toolbar: '#bar_is_up' } //这里的toolbar值是模板元素的选择器
+                    , { field: 'state', fixed: 'right', width: 100, align: 'center', title: '状态', toolbar: '#bar_state' } //这里的toolbar值是模板元素的选择器
                     , { fixed: 'right', width: 150, align: 'center', title: '操作', toolbar: '#bar1' } //这里的toolbar值是模板元素的选择器
                 ]]
             });

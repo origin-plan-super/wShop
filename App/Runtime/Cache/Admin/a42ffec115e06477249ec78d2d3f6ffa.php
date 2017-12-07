@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>订单信息</title>
-    <link rel="stylesheet" href="/wShop/Public/vendor/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/wShop/Public/vendor/bootstrap/css/bootstrap.min.css">
     <!-- css -->
 <link href="/wShop/Public/vendor/layui/css/layui.css" rel="stylesheet" type="text/css">
 <link href="/wShop/Public/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -408,6 +408,27 @@
 
     <div class="container">
 
+        <?php if($order["state"] == 5): ?><h3>
+                <span class="label label-primary"><?php echo ($order["sc_type"]); ?></span>
+                <span class="label label-info"><?php echo ($order["sc_info"]); ?></span>
+            </h3>
+            <br> 售后已处理
+            <span class="glyphicon glyphicon-ok"></span>
+            <br>
+            <hr><?php endif; ?>
+
+
+        <?php if($order["state"] == 4): ?><h3>
+                <span class="label label-primary"><?php echo ($order["sc_type"]); ?></span>
+                <span class="label label-info"><?php echo ($order["sc_info"]); ?></span>
+            </h3>
+            <br>
+            <h4>
+                <a class="btn btn-info" href="/wShop/index.php/Admin/Order/sh_ok/order_id/<?php echo ($order["order_id"]); ?>" role="button">确认处理</a>
+            </h4>
+            <hr><?php endif; ?>
+
+
         <div class="table-responsive" id="table">
 
             <table id="" class="table table-bordered table-striped table-hover table-darsk table-sms">
@@ -470,7 +491,7 @@
         </div>
     </div>
 
-    <script rel="stylesheet" href="/wShop/Public/vendor/bootstrap4/js/bootstrap.min.js"></script>
+    <script rel="stylesheet" href="/wShop/Public/vendor/bootstrap/js/bootstrap.min.js"></script>
 
 
     <script>
