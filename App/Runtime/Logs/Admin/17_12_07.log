@@ -5359,3 +5359,556 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000987s ]
 
+[ 2017-12-07T10:52:18+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000949s ]
+
+[ 2017-12-07T10:52:18+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Brand/showList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000353s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000445s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001218s ]
+
+[ 2017-12-07T10:52:20+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Use/getListWhere?page=1&limit=30&table=brand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+SQL: SHOW COLUMNS FROM `wshop_brand` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wshop_brand` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_brand` ORDER BY add_time desc LIMIT 0,30   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001017s ]
+
+[ 2017-12-07T10:52:48+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2017-12-07T10:52:48+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Brand/showList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000386s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001218s ]
+
+[ 2017-12-07T10:52:49+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Use/getListWhere?page=1&limit=30&table=brand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `wshop_brand` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wshop_brand` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` ORDER BY add_time desc LIMIT 0,30   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+
+[ 2017-12-07T10:52:57+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000430s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001182s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001259s ]
+
+[ 2017-12-07T10:52:57+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Brand/showList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011882s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2017-12-07T10:52:58+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Use/getListWhere?page=1&limit=30&table=brand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `wshop_brand` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wshop_brand` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` ORDER BY add_time desc LIMIT 0,30   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2017-12-07T10:52:58+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001120s ]
+
+[ 2017-12-07T10:52:58+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Goods/showList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000350s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000417s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
+
+[ 2017-12-07T10:52:59+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Goods/getList?page=1&limit=20&table=goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `wshop_goods` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wshop_goods` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_goods` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wshop_class` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wshop_brand` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '18aed246ddac01437ad19f19fb78c231' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'e9977bf32b6447cbd5002af7c4538db4' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-12-07T10:52:59+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2017-12-07T10:52:59+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Brand/showList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000402s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000533s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010882s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001076s ]
+
+[ 2017-12-07T10:52:59+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Use/getListWhere?page=1&limit=30&table=brand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `wshop_brand` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wshop_brand` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_brand` ORDER BY add_time desc LIMIT 0,30   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+
+[ 2017-12-07T10:53:00+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2017-12-07T10:53:00+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Goods/showList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000453s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000540s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001053s ]
+
+[ 2017-12-07T10:53:00+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Goods/getList?page=1&limit=20&table=goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `wshop_goods` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wshop_goods` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_goods` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wshop_class` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wshop_brand` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '18aed246ddac01437ad19f19fb78c231' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'e9977bf32b6447cbd5002af7c4538db4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = 'f7c6e97ba74a6e729923f6bb43d18f65' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wshop_class` WHERE `class_id` = '0ffa25e26d728e8ccaabd69986275925' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_brand` WHERE `brand_id` = '32b4556c5e37cf50c2e21b3ae035889f' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2017-12-07T10:53:00+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2017-12-07T10:53:00+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Brand/showList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000389s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000503s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001104s ]
+
+[ 2017-12-07T10:53:01+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Use/getListWhere?page=1&limit=30&table=brand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `wshop_brand` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wshop_brand` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wshop_brand` ORDER BY add_time desc LIMIT 0,30   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001168s ]
+
+[ 2017-12-07T10:53:17+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001432s ]
+
+[ 2017-12-07T10:53:18+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Brand/showList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2017-12-07T10:53:18+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Use/getListWhere?page=1&limit=30&table=brand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `wshop_brand` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wshop_brand` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wshop_brand` ORDER BY add_time desc LIMIT 0,30   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001039s ]
+
+[ 2017-12-07T10:53:20+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2017-12-07T10:53:20+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Nav/showList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000334s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000418s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001065s ]
+
+[ 2017-12-07T10:53:20+08:00 ] 127.0.0.1 /wShop/index.php/Admin/Use/getList?page=1&limit=10&table=nav&order=sort+asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `wshop_nav` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: where D:\database\Project\working\company\wShop\App\Admin\Controller\UseController.class.php 第 150 行.
+SQL: SELECT * FROM `wshop_nav` ORDER BY sort asc  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001177s ]
+

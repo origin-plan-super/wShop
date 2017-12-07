@@ -409,8 +409,12 @@
         .layui-nav-tree .layui-this,
         .layui-nav-tree .layui-this>a,
         .layui-nav-tree .layui-this>a:hover {
-            background-color: #ddd;
-            color: #000;
+            background-color: #eee;
+            color: #333;
+        }
+
+        .layui-nav-tree .layui-nav-bar {
+            background-color: #eee;
         }
     </style>
 </head>

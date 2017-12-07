@@ -14,6 +14,8 @@
     <style>
         body {
             background-color: rgb(38, 38, 38);
+            color: #fff;
+            font-size: 13px;
         }
 
         .table {
@@ -44,6 +46,11 @@
 
 <body>
 
+    <div id="test"></div>
+
+    <h1>
+        <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx9b7ab18e61268efb&redirect_uri=http%3A%2F%2F120.78.162.200%3A12138%2FwShop%2Ftest.php&response_type=code&scope=snsapi_base&state=123#wechat_redirect">12312312312</a>
+    </h1>
 
     <script src='public/vendor/vue/vue.js'></script>
     <script src='public/vendor/jquery/jquery.js'></script>
@@ -54,30 +61,52 @@
 
     <script>
 
-
-
-
-
         (function () {
-
-            var url = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxc5919bd34da8b695&secret=87e678bca54b92f8c7213e1ba9f12963';
-            var obj = {
-
-            };
+            // var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx9b7ab18e61268efb&redirect_uri=http%3A%2F%2Fqq.com%2Ftest%2Ftest.html&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
+            // var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx9b7ab18e61268efb&redirect_uri=http%3A%2F%2Fqq.com%2Ftest%2Ftest.html&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
+            // var url = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxc5919bd34da8b695&secret=87e678bca54b92f8c7213e1ba9f12963';
+            var obj = {};
             var fun = function (res) {
+
+                $('#test').html(JSON.stringify(res));
                 w(res);
-                try {
-                    res = JSON.parse(res);
-                } catch (error) {
-                    //转换错误
-                    return
-                }
+
+                // getUserInfo(res.access_token);
 
             };
             $.get(url, obj, fun);
 
         }());
 
+
+        function getUserInfo(access_token) {
+
+
+            (function () {
+
+                var url = 'https://api.weixin.qq.com/cgi-bin/user/info?access_token=ACCESS_TOKEN&openid=OPENID&lang=zh_CN ';
+                var obj = {
+                    access_token: access_token
+
+                };
+                var fun = function (res) {
+
+                    try {
+                        res = JSON.parse(res);
+                    } catch (error) {
+                        //转换错误
+                        return
+                    }
+
+                };
+                $.get(url, obj, fun);
+
+            }());
+
+
+
+
+        }
 
 
     </script>
