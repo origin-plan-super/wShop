@@ -108,7 +108,7 @@ function read(content) {
 
 
 function addList() {
-
+    var load = layer.load(2);
     w(saveArr);
 
     (function () {
@@ -120,7 +120,7 @@ function addList() {
 
         };
         var fun = function (res) {
-
+            layer.close(load);
             try {
                 res = JSON.parse(res);
             } catch (error) {
