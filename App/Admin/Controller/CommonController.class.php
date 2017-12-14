@@ -21,9 +21,6 @@ class CommonController extends Controller {
     public function _initialize() {
         
         
-     
-        
-        
         
         if (empty(session('admin_id'))) {
             $url=U('Login/login');

@@ -63,11 +63,11 @@ function _request($curl,$https=true,$method='GET',$data=null){
 */
 function baseAuth($redirect_url){
     
-    $appid='wx9b7ab18e61268efb';
-    $appsecret='bcd46807674b9448617438256db6cada';
+    // $appid='wx9b7ab18e61268efb';
+    // $appsecret='bcd46807674b9448617438256db6cada';
     //===
-    // $appid='wxc5919bd34da8b695';
-    // $appsecret='87e678bca54b92f8c7213e1ba9f12963';
+    $appid='wxc5919bd34da8b695';
+    $appsecret='87e678bca54b92f8c7213e1ba9f12963';
     
     
     //1.准备scope为 snsapi_base 网页授权页面 snsapi_userinfo
@@ -81,7 +81,6 @@ function baseAuth($redirect_url){
     if( !isset($code) ){
         header('Location:'.$snsapi_base_url);
     }
-    
     
     //3.通过code换取网页授权access_token和openid
     $curl = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='.$appid.'&secret='.$appsecret.'&code='.$code.'&grant_type=authorization_code';

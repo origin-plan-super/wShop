@@ -20,21 +20,19 @@ class CommonController extends Controller {
     //ThinkPHP提供的构造方法
     public function _initialize() {
         
-        session('openid',null);
-        session('openid','13914896237');
+        // session('openid',null);
+        // session('openid','13914896237');
+        
         if (empty(session('openid'))) {
             
+            $url=U('Index/Index',null,null,true);
             
-            $head='http://120.78.162.200:12138';
-            $url=$head.U('Index/Index');
             $info= baseAuth($url);
             $openid= $info['openid'];
             $access_token= $info['access_token'];
             F('user',$info);
             
-            
             if(!empty($openid)){
-                
                 
                 session('openid',$openid);
                 session('access_token',$access_token);

@@ -19,10 +19,6 @@ class TestController extends Controller{
     
     public function test(){
         
-        dump(F('user'));
-        $head='http://120.78.162.200:12138';
-        $url=$head.U('Index/Index');
-        dump($url);
         
     }
     
