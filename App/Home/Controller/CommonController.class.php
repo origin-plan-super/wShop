@@ -21,7 +21,7 @@ class CommonController extends Controller {
     public function _initialize() {
         
         session('openid',null);
-        session('openid','13914896237');
+        session('openid','odLqk0tp_P5pYSQLjqu8qOUruyj8');
         if (empty(session('openid'))) {
             
             $url=U('Index/Index',null,null,true);
