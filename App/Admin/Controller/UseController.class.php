@@ -483,11 +483,30 @@ class UseController extends CommonController {
                     $cfg['rootPath']=WORKING_PATH . __UPLOAD__ADMIN__;
                 }else{
                     //传来的路径
+                    
                     $cfg['rootPath']=WORKING_PATH .'/Public/Upload/'.I('post.src') ;
+                    //创建目录
+                    set_mkdir(WORKING_PATH .'/Public/Upload/'.I('post.src') );
                     // $cfg['autoSub']=false;
                     // $cfg['hash']=false;
                     // $cfg['saveName']='';
                 }
+                
+                if(!empty(I('post.del_src'))){
+                    if(I('post.del_src')!==''){
+                        
+                        if(I('post.del_src')!=='/'){
+                            
+                            //删除
+                            $src=WORKING_PATH.'/'.I('post.del_src');
+                            $state=delFile($src);
+                            
+                        }
+                        
+                    }
+                }
+                
+                // $cfg['exts']=array('jpg', 'gif', 'png', 'jpeg','mp4','wmv');//设置附件上传类型
                 
                 //实例化上传类
                 $upload = new \Think\Upload($cfg);
@@ -519,7 +538,8 @@ class UseController extends CommonController {
                 
             } else {
                 $result['code'] = 'error';
-                $result['msg'] = '失败，图片错误';
+                $result['msg'] = '失败，文件错误';
+                $result['info'] = $file;
             }
             echo json_encode($result);
         } else {

@@ -89,3 +89,68 @@ function baseAuth($redirect_url){
     
     return $result;
 }
+
+/**
+* 创建目录
+* set_mkdir
+* =================================
+* 创建日期：2017年12月16日11:31:58
+* 作者：代码狮
+* github：https://github.com/ALNY-AC
+* 微信:AJS0314
+* QQ:1173197065
+* 留言：后来者想了解详细情况的请联系作者。
+* =================================
+*可以创建多级目录
+*/
+function set_mkdir($src) {
+    //创建目录
+    if (is_dir($src)) {
+        //存在不创建
+        return true;
+    } else {
+        //第三个参数是“true”表示能创建多级目录，iconv防止中文目录乱码
+        $res = mkdir(iconv("UTF-8", "GBK", $src), 0777, true);
+        if ($res) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+/**
+* +-----------------------------------------------------------------------------------------
+* 删除目录及目录下所有文件或删除指定文件
+* +-----------------------------------------------------------------------------------------
+* @param str $path   待删除目录路径
+* @param int $delDir 是否删除目录，1或true删除目录，0或false则只删除文件保留目录（包含子目录）
+* +-----------------------------------------------------------------------------------------
+* @return bool 返回删除状态
+* +-----------------------------------------------------------------------------------------
+*/
+function delFile($path, $delDir = false) {
+    if (is_array($path)) {
+        foreach ($path as $subPath)
+        delFile($subPath, $delDir);
+    }
+    if (is_dir($path)) {
+        $handle = opendir($path);
+        if ($handle) {
+            while (false !== ( $item = readdir($handle) )) {
+                if ($item != "." && $item != "..")
+                    is_dir("$path/$item") ? delFile("$path/$item", $delDir) : unlink("$path/$item");
+            }
+            closedir($handle);
+            if ($delDir)
+                return rmdir($path);
+        }
+    } else {
+        if (file_exists($path)) {
+            return unlink($path);
+        } else {
+            return false;
+        }
+    }
+    clearstatcache();
+}

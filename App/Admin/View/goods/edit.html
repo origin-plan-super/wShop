@@ -247,7 +247,7 @@
         var headImgApp = new Vue({
             el: '#headImgApp',
             data: {
-                img: '__ROOT__/' + '{$goods.head_img}',
+                img: '__ROOT__' + '{$goods.head_img}',
                 src: '{$goods.head_img}',
                 remove: false,
                 title: '上传图片'
@@ -257,7 +257,7 @@
         var infoHeadImgApp = new Vue({
             el: '#infoHeadImgApp',
             data: {
-                img: '__ROOT__/' + '{$goods.info_head_img}',
+                img: '__ROOT__' + '{$goods.info_head_img}',
                 src: '{$goods.info_head_img}',
                 remove: false,
                 title: '上传图片'
@@ -358,10 +358,14 @@
                 }
                 , done: function (res) {
                     //上传完毕回调
-                    w(res.data.src);
-
-                    headImgApp.img = '__ROOT__/' + res.data.src;
+                    headImgApp.img = '__ROOT__' + res.data.src;
                     headImgApp.src = res.data.src;
+
+                    console.warn('up_info_head_img');
+                    console.warn('输出测试…………');
+                    console.warn(headImgApp.img);
+                    console.warn('输出测试…………end');
+
                     // headImgApp.remove = true;
                     headImgApp.title = '重新上传';
                 }
@@ -380,9 +384,10 @@
                 }
                 , done: function (res) {
                     //上传完毕回调
-                    w(res);
-                    infoHeadImgApp.img = '__ROOT__/' + res.data.src;
+
+                    infoHeadImgApp.img = '__ROOT__' + res.data.src;
                     infoHeadImgApp.src = res.data.src;
+
                     // infoHeadImgApp.remove = true;
                     infoHeadImgApp.title = '重新上传';
                 }

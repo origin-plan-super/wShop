@@ -355,15 +355,21 @@
                 }
                 , done: function (res) {
                     //上传完毕回调
-                    w(res.data.src);
+                    console.warn('输出测试…………');
+                    console.warn(res);
+                    console.warn('输出测试…………end');
 
-                    headImgApp.img = '__ROOT__/' + res.data.src;
+
+
+                    headImgApp.img = '__ROOT__' + res.data.src;
                     headImgApp.src = res.data.src;
                     // headImgApp.remove = true;
                     headImgApp.title = '重新上传';
                 }
-                , error: function () {
+                , error: function (e) {
                     //请求异常回调
+                    console.log(e);
+
                 }
             });
 
@@ -377,8 +383,10 @@
                 }
                 , done: function (res) {
                     //上传完毕回调
-                    w(res);
-                    infoHeadImgApp.img = '__ROOT__/' + res.data.src;
+                    console.warn('输出测试…………');
+                    console.warn(res);
+                    console.warn('输出测试…………end');
+                    infoHeadImgApp.img = '__ROOT__' + res.data.src;
                     infoHeadImgApp.src = res.data.src;
                     // infoHeadImgApp.remove = true;
                     infoHeadImgApp.title = '重新上传';

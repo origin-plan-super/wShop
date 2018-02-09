@@ -21,7 +21,6 @@ class IndexController extends CommonController{
     //主
     public function index(){
         
-        
         //找导航
         $model=M('nav');
         $where=[];
