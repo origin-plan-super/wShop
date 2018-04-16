@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="__VENDOR__/mui/css/mui.indexedlist.css" />
     <link rel="stylesheet" type="text/css" href="__HDIST__/source/font/iconfont.css" />
     <link rel="stylesheet" type="text/css" href="__HDIST__/a/a.css" />
-    <link rel="stylesheet" type="text/css" href="__HDIST__/brand/css/brand.css" />
 
     <style>
         .am-header {
@@ -33,11 +32,23 @@
             padding: 6px;
         }
 
-        .box {
-            position: absolute;
-            top: 50px;
-            bottom: 50px;
-            overflow: auto;
+        .box {}
+
+        .mui-bar.mui-bar-nav {
+            background: #000000;
+        }
+
+        /*更改顶部的input框的样式*/
+
+        input[type=search] {
+            font-size: 16px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            height: 34px;
+            text-align: center;
+            border: 0;
+            border-radius: 9px;
+            background-color: #FFFFFF;
         }
     </style>
 </head>

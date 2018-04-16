@@ -13,14 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="__HDIST__/a/a.css" />
 	<link rel="stylesheet" type="text/css" href="__HDIST__/class/css/class.css" />
 	<style>
-		.z-box {
-			position: fixed;
-			top: 0;
-			bottom: 50px;
-			left: 0;
-			right: 0;
-			overflow: hidden;
-		}
+		.z-box {}
 
 		.top-nav {
 			width: 100%;
@@ -45,11 +38,9 @@
 
 		.a-panel {
 			position: absolute;
-			height: 100%;
 			width: 100%;
 			transition: all 0.3s;
 			opacity: 0;
-			overflow: hidden;
 			z-index: -1;
 		}
 
@@ -59,23 +50,19 @@
 		}
 
 		.my-panel {
-			overflow: auto;
-			height: 100%;
 			padding-bottom: 100px;
+			background-color: #ff00ff;
 		}
 
 
 		.a-cf.my-panel-2 {
 			overflow: auto;
-			max-height: 100%;
-			position: absolute;
-			top: 0;
-			bottom: 50px;
+			height: 100vh;
 		}
 
 		.my-panel-2 {
 			overflow: auto;
-			max-height: 100%;
+			padding-top: 50px;
 		}
 	</style>
 
@@ -86,7 +73,7 @@
 	<div class="z-box">
 
 		<!--滑动开始-->
-		<div class="top-nav">
+		<div class="top-nav fix">
 			<div data-active='[data-panel="0"]' class="top-nav-item active">商品</div>
 			<div data-active='[data-panel="1"]' class="top-nav-item  ">分类</div>
 		</div>
@@ -94,27 +81,30 @@
 		<div class="a-panel active" data-panel='0'>
 			<div class="my-panel ">
 				<div class="pbl">
-					<volist name="goods" id="vo" empty="没有商品">
-						<div class="goods-list-box">
-							<a href="__MODULE__/goodsInfo/goodsInfo/goods_id/{$vo.goods_id}">
-								<!-- <a href="#"> -->
-								<div class="goods-list">
-									<div class="goods-img am-text-middle">
-										<img src="__ROOT__{$vo.head_img}" class="am-text-middle" alt="图片错误！">
+					<div class="swiper-slide">
+						<volist name="goods" id="vo" empty="没有商品">
+							<div class="goods-list-box">
+								<a href="__MODULE__/goodsInfo/goodsInfo/goods_id/{$vo.goods_id}">
+									<!-- <a href="#"> -->
+									<div class="goods-list">
+										<div class="goods-img am-text-middle">
+											<img src="__ROOT__{$vo.head_img}" class="am-text-middle" alt="图片错误！">
+										</div>
+										<div class="goods-info">
+											<div>{$vo.goods_title}</div>
+											<div>{$vo.money}￥</div>
+										</div>
 									</div>
-									<div class="goods-info">
-										<div>{$vo.goods_title}</div>
-										<div>{$vo.money}￥</div>
-									</div>
-								</div>
-							</a>
-						</div>
-					</volist>
+								</a>
+							</div>
+						</volist>
+					</div>
+
 				</div>
 			</div>
 
 		</div>
-		<div class="a-panel  " data-panel='1' style="background-color: #fff">
+		<div class="a-panel" data-panel='1' style="background-color: #fff">
 			<div class="my-panel-2">
 
 				<div id="someTabs" data-am-widget="tabs" data-a-widget="tabs" class="am-tabs am-tabs-default a-tabs a-tabs-default">

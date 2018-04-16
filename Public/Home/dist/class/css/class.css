@@ -1,6 +1,5 @@
 /*侧边栏变成块级元素*/
 
-
 /*框架中的样式会冲掉 自己写的 a.css中的样式 所以在这重新加上*/
 
 .a-tabs-nav.a-cf {
@@ -16,9 +15,7 @@
     padding-left: 50px;
 }
 
-
 /*改左边的高度*/
-
 
 /*更改侧边栏的颜色*/
 
@@ -27,14 +24,12 @@
     line-height: 42px;
 }
 
-
 /*更改选中的样式*/
 
 .a-tabs-default .a-tabs-nav>.am-active a {
     background-color: #FFFFFF;
     color: #000000;
 }
-
 
 /*右侧样式更改*/
 
@@ -49,7 +44,6 @@
     background-color: #FFFFFF;
 }
 
-
 /*更改大的margin*/
 
 [data-a-widget='tabs'] {
@@ -59,7 +53,6 @@
 [data-am-widget='tabs'] {
     margin: 0;
 }
-
 
 /*给左边加下边框*/
 
@@ -71,6 +64,12 @@
     border-bottom: 1px solid #C7C7CC;
 }
 
+.fix {
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    background: #fff;
+}
 
 /*改变左边a标签的样式*/
 
@@ -89,9 +88,7 @@
     text-decoration: none;
 }
 
-
 /*下边是加了上边的选项卡之后的样式*/
-
 
 /*去掉小箭頭*/
 
@@ -99,13 +96,11 @@
     content: none;
 }
 
-
 /*去掉父级的padding*/
 
 .am-tabs-bd .am-tab-panel {
     padding: 5px 0px;
 }
-
 
 /*更改顶部的样式*/
 
@@ -125,7 +120,6 @@
     background-color: #FFFFFF;
 }
 
-
 /*更改border*/
 
 .am-tabs-bd {
@@ -138,7 +132,6 @@
     transition: height .3s;
 }
 
-
 /*更改input的背景颜色*/
 
 .mui-bar input[type=search] {
@@ -146,7 +139,6 @@
     margin: 6px 0;
     background: #FFFFFF;
 }
-
 
 /*让顶部的两个选项卡固定定位之后 下边的那个 商品列表相对于顶部有距离  不会被盖住*/
 
@@ -158,9 +150,7 @@
     padding-right: 1em;
 }
 
-
 /*以上是更改框架中的样式*/
-
 
 /*固定顶部的两个选项卡*/
 
@@ -173,20 +163,17 @@
     top: 37px;
 }
 
-
 /*更改分类中的字体大小*/
 
 .a-list.list-sm {
     font-size: 14px;
 }
 
-
 /*改变的header的行高*/
 
 .top-banner {
     line-height: 47px;
 }
-
 
 /*把框架里边的input改变成内联块级元素*/
 
