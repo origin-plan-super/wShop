@@ -44,11 +44,13 @@
 			transition: all 0.3s;
 			opacity: 0;
 			z-index: -1;
+			display: none;
 		}
 
 		.a-panel.active {
 			opacity: 1;
 			z-index: 999;
+			display: block;
 		}
 
 		.my-panel {
@@ -59,9 +61,13 @@
 		.a-cf.my-panel-2 {
 			overflow: auto;
 			height: 100vh;
+			max-width: 100vh;
+
 		}
 
 		.my-panel-2 {
+			height: 100vh;
+			max-width: 100vh;
 			overflow: auto;
 			padding-top: 50px;
 		}
@@ -76,7 +82,7 @@
 		<!--滑动开始-->
 		<div class="top-nav fix">
 			<div data-active='[data-panel="0"]' class="top-nav-item active">商品</div>
-			<div data-active='[data-panel="1"]' class="top-nav-item  ">分类</div>
+			<div data-active='[data-panel="1"]' class="top-nav-item">分类</div>
 		</div>
 
 		<div class="a-panel active" data-panel='0'>
@@ -103,8 +109,8 @@
 
 				</div>
 			</div>
-
 		</div>
+
 		<div class="a-panel" data-panel='1' style="background-color: #fff">
 			<div class="my-panel-2">
 
